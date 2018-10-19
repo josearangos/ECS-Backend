@@ -10,3 +10,4 @@ Instalar dependencias
 
 - python init.py
 # CategoryComponentBackend
+# CategoryComponentBackend
