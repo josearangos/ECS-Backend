@@ -9,3 +9,4 @@ Instalar dependencias
 #Para correrlo se necesita que ejecutar el siguiente comando
 
 - python init.py
+# CategoryComponentBackend
