@@ -12,4 +12,5 @@ class user(Resource):
 
     def post(self):
         data = request.get_json()  # capturo el valor por la URL
+        print(data)
         return {'you user is': data}, 201
