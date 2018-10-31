@@ -3,6 +3,8 @@ from flask_restful import Resource, Api
 from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import default_exceptions
 import config
+import pymongo
+
 
 app = Flask(__name__)
 
