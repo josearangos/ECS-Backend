@@ -116,6 +116,6 @@ venv.bak/
 .mypy_cache/
 
 # config files
-config.ini
+# config.ini
 
 .idea/
