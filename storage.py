@@ -4,9 +4,10 @@ import configparser
 config = configparser.ConfigParser()
 config.read('./config.ini')
 
+
 def connect():
     # Establish connection
-    #print(config['MONGODB']['MONGO_URL'])
+    # print(config['MONGODB']['MONGO_URL'])
     #client = MongoClient(config['MONGODB']['MONGO_URL'])
     uri = config['MONGODB']['ConnectionString']
     client = MongoClient(uri)

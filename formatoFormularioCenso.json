@@ -1,0 +1,53 @@
+{
+  "seccion": [
+    {
+      "number": 1,
+      "name": "ubicacion",
+      "description": "preguntas sobre el lugar de ubicación de la vivienda en la cualreside habitualmente el usuario",
+      "questions": [
+        {
+          "id": 1,
+          "type": "desplegable",
+          "question": "Seleccione el departamento donde se encuentra ubicada la vivienda en la cual reside habitualmente",
+          "options": ["Antioquia", "Amazonas", "Arauca", "Atlántico", "Bolívar"]
+        },
+        {
+          "id": 2,
+          "type": "desplegable",
+          "question": "Seleccione el municipio donde se encuentra ubicada la vivienda en la cual reside habitualmente",
+          "options": ["Apartado", "Carepa", "puerto Asis", "San Jose"]
+        },
+        {
+          "id": 3,
+          "type": "opciones",
+          "question": "Seleccione el lugar donde ésta ubicada la vivienda en la cual reside actualmente",
+          "options": [
+            {
+              "titulo": "Cabecera municipal"
+            },
+            {},
+            {}
+          ]
+        },
+
+        {
+          "id": 4,
+          "type": "",
+          "question": "",
+          "options": []
+        }
+      ]
+    },
+    {
+      "number": 2
+    },
+    {
+      "number": 3
+    },
+    {
+      "number": 4
+    }
+  ],
+  "ECN": "",
+  "CFN": ""
+}

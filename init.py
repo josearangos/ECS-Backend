@@ -1,4 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_jwt_extended import JWTManager
+
+from flask_jwt_extended import (create_access_token, create_refresh_token,
+                                jwt_required, jwt_refresh_token_required, get_jwt_identity)
 from flask_restful import Resource, Api
 from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import default_exceptions
@@ -8,6 +12,10 @@ import pymongo
 
 app = Flask(__name__)
 
+
+# Adding JWT
+app.config['JWT_SECRET_KEY'] = 'pepitoperezcarvajales'
+jwt = JWTManager(app)
 # Importamos la configuracion global de nuestra app
 app.config.from_pyfile('config.py')
 # asigamos el prefijo "ECS/Api/v1" a todas las rutas
@@ -28,9 +36,30 @@ for ex in default_exceptions:
 
 
 # importamos todas las rutas de nuestra API
-from Routes.UserRoute import user
+# Usuario
+from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh
+# Analista
+from Routes.AnalistRoute import analistLogin, analistTokenRefresh
+# Collector
+from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector
 
-api.add_resource(user, '/user', '/user')
+# Usuario
+api.add_resource(userLogin, '/user/login', '/user/login')
+api.add_resource(insertCode, '/code/insert', '/code/insert')
+api.add_resource(SecretResource, '/secret', '/secret')
+api.add_resource(TokenRefresh, '/user/tokenRefresh', '/user/tokenRefresh')
+
+# Analista
+api.add_resource(analistLogin, '/analist/login', '/analist/login')
+api.add_resource(analistTokenRefresh, '/analist/tokenRefresh',
+                 '/analist/tokenRefresh')
+# Collector
+api.add_resource(registreCollector, '/collector/registre',
+                 '/collector/registre')
+api.add_resource(collectorLogin, '/collector/login', '/collector/login')
+api.add_resource(collectorTokenRefresh,
+                 '/collector/tokenRefresh', '/analist/tokenRefresh')
+
 
 if __name__ == '__main__':
     app.run()
