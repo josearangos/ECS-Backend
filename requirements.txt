@@ -10,3 +10,5 @@ pytz==2018.3
 six==1.11.0
 Werkzeug==0.14.1
 certifi==2018.1.18
+Flask-JWT
+flask-jwt-extended

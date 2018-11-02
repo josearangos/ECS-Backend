@@ -34,3 +34,9 @@ class analistTokenRefresh(Resource):
         print(current_user)
         access_token = create_access_token(identity=current_user)
         return {'access_token': access_token}
+class findAnalist(Resource):
+    #@jwt_required
+    def get(self):
+        id = request.args
+        data, status = collector = AnalistController.find(AnalistCollection, id['id'])
+        return data, status

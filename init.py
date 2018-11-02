@@ -39,9 +39,9 @@ for ex in default_exceptions:
 # Usuario
 from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh
 # Analista
-from Routes.AnalistRoute import analistLogin, analistTokenRefresh
+from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist
 # Collector
-from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector
+from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector
 
 # Usuario
 api.add_resource(userLogin, '/user/login', '/user/login')
@@ -53,13 +53,14 @@ api.add_resource(TokenRefresh, '/user/tokenRefresh', '/user/tokenRefresh')
 api.add_resource(analistLogin, '/analist/login', '/analist/login')
 api.add_resource(analistTokenRefresh, '/analist/tokenRefresh',
                  '/analist/tokenRefresh')
+api.add_resource(findAnalist, '/analist/', '/analist/')
 # Collector
 api.add_resource(registreCollector, '/collector/registre',
                  '/collector/registre')
+api.add_resource(findCollector, '/collector/', '/collector/')
 api.add_resource(collectorLogin, '/collector/login', '/collector/login')
 api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')
-
 
 if __name__ == '__main__':
     app.run()
