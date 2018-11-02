@@ -54,9 +54,11 @@ class registreCollector(Resource):
             CollectorCollection, data)
         return {'message': message, "success": success}
 
+
 class findCollector(Resource):
-    #@jwt_required
+    # @jwt_required
     def get(self):
         id = request.args
-        data, status = collector = CollectorController.find(CollectorCollection, id['id'])
+        data, status = collector = CollectorController.find(
+            CollectorCollection, id['id'])
         return data, status

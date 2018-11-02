@@ -53,11 +53,12 @@ api.add_resource(TokenRefresh, '/user/tokenRefresh', '/user/tokenRefresh')
 api.add_resource(analistLogin, '/analist/login', '/analist/login')
 api.add_resource(analistTokenRefresh, '/analist/tokenRefresh',
                  '/analist/tokenRefresh')
-api.add_resource(findAnalist, '/analist/', '/analist/')
+api.add_resource(findAnalist, '/analist/show_analist', '/analist/show_analist')
 # Collector
 api.add_resource(registreCollector, '/collector/registre',
                  '/collector/registre')
-api.add_resource(findCollector, '/collector/', '/collector/')
+api.add_resource(findCollector, '/collector/show_collector',
+                 '/collector/show_collector')
 api.add_resource(collectorLogin, '/collector/login', '/collector/login')
 api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')

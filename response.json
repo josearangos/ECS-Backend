@@ -1,0 +1,29 @@
+{
+  "seccion": [
+    {
+      "number": 1,
+
+      "Response_Questions": [
+        {
+          "id": 1,
+          "responses": []
+        },
+        {
+          "id": 2,
+          "responses": []
+        }
+      ]
+    },
+    {
+      "number": 2
+    },
+    {
+      "number": 3
+    },
+    {
+      "number": 4
+    }
+  ],
+  "ECN": "",
+  "CFN": ""
+}

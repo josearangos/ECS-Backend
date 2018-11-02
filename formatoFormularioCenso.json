@@ -1,51 +1,213 @@
 {
   "seccion": [
     {
-      "number": 1,
-      "name": "ubicacion",
-      "description": "preguntas sobre el lugar de ubicación de la vivienda en la cualreside habitualmente el usuario",
+      "number": 1
+    },
+    {
+      "number": 2,
+      "name": "DATOS DE LA VIVIENDA",
+      "description": "",
       "questions": [
         {
           "id": 1,
-          "type": "desplegable",
-          "question": "Seleccione el departamento donde se encuentra ubicada la vivienda en la cual reside habitualmente",
-          "options": ["Antioquia", "Amazonas", "Arauca", "Atlántico", "Bolívar"]
+          "type": "option",
+          "question": "INDIQUE EL TIPO DE VIVIENDA",
+          "options": [
+            {
+              "valor": "Casa"
+            },
+            {
+              "valor": "Departamento en edificio"
+            },
+            {
+              "valor": "Departamento en edificio"
+            },
+            {
+              "valor": "Vivienda tradicional indígena(ruka, pae pae u otras)"
+            },
+            {
+              "valor": "Pieza en casa antigua o en conventillo"
+            },
+            {
+              "valor": "Mediagua, mejora, rancho o choza"
+            },
+            {
+              "valor": "Móvil (carpa, casa rodante o similar)"
+            },
+            {
+              "valor": "Otro tipo de vivienda particular"
+            }
+          ]
         },
         {
           "id": 2,
-          "type": "desplegable",
-          "question": "Seleccione el municipio donde se encuentra ubicada la vivienda en la cual reside habitualmente",
-          "options": ["Apartado", "Carepa", "puerto Asis", "San Jose"]
+          "type": "option",
+          "question": "Vivienda colectiva",
+          "options": [
+            {
+              "valor": "Ejemplo: residencial, pensión,hogar de ancianos, etc"
+            }
+          ]
         },
         {
           "id": 3,
-          "type": "opciones",
-          "question": "Seleccione el lugar donde ésta ubicada la vivienda en la cual reside actualmente",
+          "type": "option",
+          "question": "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en las paredes exteriores?",
           "options": [
             {
-              "titulo": "Cabecera municipal"
+              "valor": "Hormigón armado"
             },
-            {},
-            {}
+            {
+              "valor": "Albañilería: bloque de cemento, piedra o ladrillo"
+            },
+            {
+              "valor": "Tabique forrado por ambas caras(madera o acero)"
+            },
+            {
+              "valor": "Tabique sin forro interior (madera u otro) ."
+            },
+            {
+              "valor": "Adobe, barro, quincha, pirca u otro artesanal tradicional ."
+            },
+            {
+              "valor": "Materiales precarios (lata, cartón, plástico, etc.)"
+            }
           ]
         },
-
         {
           "id": 4,
-          "type": "",
-          "question": "",
-          "options": []
+          "type": "option",
+          "question": "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en el piso?",
+          "options": [
+            {
+              "valor": "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar;  sobre radier o vigas de madera"
+            },
+            {
+              "valor": "Radier sin revestimiento"
+            },
+            {
+              "valor": "Baldosa de cemento"
+            },
+            {
+              "valor": "Capa de cemento sobre tierra"
+            },
+            {
+              "valor": "Tierra"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "option",
+          "question": "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en el piso?",
+          "options": [
+            {
+              "valor": "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar;  sobre radier o vigas de madera"
+            },
+            {
+              "valor": "Radier sin revestimiento"
+            },
+            {
+              "valor": "Baldosa de cemento"
+            },
+            {
+              "valor": "Capa de cemento sobre tierra"
+            },
+            {
+              "valor": "Tierra"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "type": "integer",
+          "question": "¿CUÁNTAS PIEZAS DE ESTA VIVIENDA SE USAN EXCLUSIVAMENTE COMO DORMITORIO?"
+        },
+        {
+          "id": 7,
+          "type": "option",
+          "question": "El agua que usa esta vivienda proviene principalmente de:",
+          "options": [
+            {
+              "valor": "Red pública ."
+            },
+            {
+              "valor": "Pozo o noria"
+            },
+            {
+              "valor": "Camión aljibe"
+            },
+            {
+              "valor": "Río, vertiente, estero, canal, lago, etc ."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "type": "integer",
+          "question": "¿CUÁNTAS PERSONAS ALOJARON AQUÍ ANOCHE? No olvide incluir guaguas,niñas, niños y adultos mayores."
+        },
+        {
+          "id": 9,
+          "type": "option",
+          "question": "DE LAS PERSONAS QUE ALOJARON AQUÍ ANOCHE ¿TODAS COMPARTEN LOS GASTOS PARA ALIMENTACIÓN?",
+          "options": [
+            {
+              "valor": "SI"
+            },
+            {
+              "valor": "NO"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "type": "integer",
+          "question": "¿Cuantos hombres viven en esta casa?"
+        },
+        {
+          "id": 11,
+          "type": "integer",
+          "question": "¿Cuantas mujeres viven en esta casa?"
         }
       ]
-    },
-    {
-      "number": 2
     },
     {
       "number": 3
     },
     {
-      "number": 4
+      "id": 4,
+      "name": "RETROALIMENTACIÓN",
+      "description": "",
+      "questions": [
+        {
+          "id": 1,
+          "type": "option",
+          "question": "¿Cual es el grado de satisfacción con la encuesta?",
+          "options": [
+            {
+              "valor": "Muy satisfecho"
+            },
+            {
+              "valor": "Satisfecho"
+            },
+            {
+              "valor": "Neutro"
+            },
+            {
+              "valor": "Insatisfecho"
+            },
+            {
+              "valor": "Muy insatisfecho"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "question": "¿Tiene algún comentario adicional que añadir?"
+        }
+      ]
     }
   ],
   "ECN": "",
