@@ -1,7 +1,36 @@
 {
   "seccion": [
     {
-      "number": 1
+      "number": 1,
+      "name": "DATOS GENERALES",
+      "descripcion": "",
+      "questions":[
+        {
+          "id": 1,
+          "type": "text",
+          "question": "NOMBRE DE LA COMUNA"
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "question": "NÚMERO DE ORDEN DE LA VIVIENDA"
+        },
+        {
+          "id": 3,
+          "type": "text",
+          "question": "NUMERO DEL DOMICILIARIO"
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "question": "PISO"
+        },
+        {
+          "id": 5,
+          "type": "text",
+          "question": "NOMBRE DE LA CALLE O CAMINO"
+        }
+      ]
     },
     {
       "number": 2,
@@ -173,7 +202,233 @@
       ]
     },
     {
-      "number": 3
+      "number": 3,
+      "name": "DATOS DE LAS PERSONAS",
+      "description": "",
+      "questions": [
+        {
+          "id": 1,
+          "type": "option",
+          "question": "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?",
+          "options": [
+            {
+              "valor": "Jefe/a de Hogar"
+            },
+            {
+              "valor": "Esposo/a o conyuge"
+            },
+            {
+              "valor": "Conviviente por union civil"
+            },
+            {
+              "valor": "Conviviente de hecho o pareja"
+            },
+            {
+              "valor": "Hijo/a"
+            },
+            {
+              "valor": "Hijo/a del cónyuge, conviviente o pareja"
+            },
+            {
+              "valor": "Hermano/a"
+            },
+            {
+              "valor": "Padre/Madre"
+            },
+            {
+              "valor": "Cuñado/a"
+            },
+            {
+              "valor": "Suegro/a"
+            },
+            {
+              "valor": "Yerno/Nuera"
+            },
+            {
+              "valor": "Nieto/a"
+            },
+            {
+              "valor": "Abuelo/a"
+            },
+            {
+              "valor": "Otro pariente"
+            },
+            {
+              "valor": "No pariente"
+            },
+            {
+              "valor": "Servicio doméstico puertas adentro"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "option",
+          "question": "¿CUÁL ES SU SEXO?",
+          "options": [
+            {
+              "valor": "Hombre"
+            },
+            {
+              "valor": "Mujer"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "integer",
+          "question": "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?"
+        },
+        {
+          "id": 4,
+          "type": "option",
+          "question": "¿EN QUÉ MES Y AÑO NACIÓ?",
+          "options": [
+            {
+              "valor": "Enero"
+            },
+            {
+              "valor": "Febrero"
+            },
+            {
+              "valor": "Marzo"
+            },
+            {
+              "valor": "Abril"
+            },
+            {
+              "valor": "Mayo"
+            },
+            {
+              "valor": "Mayo"
+            },
+            {
+              "valor": "Junio"
+            },
+            {
+              "valor": "Julio"
+            },
+            {
+              "valor": "Agosto"
+            },
+            {
+              "valor": "Septiembre"
+            },
+            {
+              "valor": "Octubre"
+            },
+            {
+              "valor": "Noviembre"
+            },
+            {
+              "valor": "Diciembre"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "¿EN QUÉ AÑO NACIÓ?",
+          "type": "string"
+        },
+        {
+          "id": 6,
+          "question": "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?",
+          "type": "option",
+          "options": [
+            {
+              "valor": "Si"
+            },
+            {
+              "valor": "No"
+            },
+            {
+              "valor": "Nunca asistió"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "¿Cuál es el curso o año más alto aprobado?",
+          "type": "option",
+          "options": [
+            {
+              "valor": "0"
+            },
+            {
+              "valor": "1"
+            },
+            {
+              "valor": "2"
+            },
+            {
+              "valor": "3"
+            },
+            {
+              "valor": "4"
+            },
+            {
+              "valor": "5"
+            },
+            {
+              "valor": "6"
+            },
+            {
+              "valor": "7"
+            },
+            {
+              "valor": "8"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:",
+          "type": "option",
+          "options": [
+            {
+              "valor": "Preescolar"
+            },
+            {
+              "valor": "Especial o Diferencial"
+            },
+            {
+              "valor": "Básica o Primaria"
+            },
+            {
+              "valor": "Media o Secundaria"
+            },
+            {
+              "valor": "Superior"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:",
+          "type": "option",
+          "options": [
+            {
+              "valor": "Si"
+            },
+            {
+              "valor": "No"
+            }
+          ]
+        },
+        {
+          "question": "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?",
+          "id": 10,
+          "type": "option",
+          "options": [
+            {
+              "valor": "Si"
+            },
+            {
+              "valor": "No"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
