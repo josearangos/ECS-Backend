@@ -1,0 +1,783 @@
+{ 
+    "_id" : ObjectId("5be5ec66e3a86b0df61d8cd9"), 
+    "ECN" : "8243597212", 
+    "CFN" : "2746674653", 
+    "idNumber" : "1017246338", 
+    "questions" : [
+        {
+            "id" : 0.0, 
+            "type" : "string", 
+            "question" : "¿Cual es tu nombre completo?", 
+            "response" : "Jose Alberto Arango Sanchez"
+        }, 
+        {
+            "id" : 0.1, 
+            "type" : "string", 
+            "question" : "¿Cual es tu tipo de documento de identificación?", 
+            "options" : [
+                {
+                    "valor" : "cédula de ciudadanía (CC) "
+                }, 
+                {
+                    "valor" : "tarjeta de identidad (TI)"
+                }, 
+                {
+                    "valor" : "tarjeta pasaporte (TP)"
+                }, 
+                {
+                    "valor" : "registro civil (RC)"
+                }, 
+                {
+                    "valor" : "cédula de extranjería (CE)"
+                }
+            ], 
+            "response" : "CC"
+        }, 
+        {
+            "id" : 0.2, 
+            "type" : "integer", 
+            "question" : "¿Cual es tu numero de identificación?", 
+            "response" : "1017246338"
+        }, 
+        {
+            "id" : 1.0, 
+            "type" : "option", 
+            "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+            "options" : [
+                {
+                    "valor" : "Jefe/a de Hogar"
+                }, 
+                {
+                    "valor" : "Esposo/a o conyuge"
+                }, 
+                {
+                    "valor" : "Conviviente por union civil"
+                }, 
+                {
+                    "valor" : "Conviviente de hecho o pareja"
+                }, 
+                {
+                    "valor" : "Hijo/a"
+                }, 
+                {
+                    "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                }, 
+                {
+                    "valor" : "Hermano/a"
+                }, 
+                {
+                    "valor" : "Padre/Madre"
+                }, 
+                {
+                    "valor" : "Cuñado/a"
+                }, 
+                {
+                    "valor" : "Suegro/a"
+                }, 
+                {
+                    "valor" : "Yerno/Nuera"
+                }, 
+                {
+                    "valor" : "Nieto/a"
+                }, 
+                {
+                    "valor" : "Abuelo/a"
+                }, 
+                {
+                    "valor" : "Otro pariente"
+                }, 
+                {
+                    "valor" : "No pariente"
+                }, 
+                {
+                    "valor" : "Servicio doméstico puertas adentro"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 2.0, 
+            "type" : "option", 
+            "question" : "¿CUÁL ES SU SEXO?", 
+            "options" : [
+                {
+                    "valor" : "Hombre"
+                }, 
+                {
+                    "valor" : "Mujer"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 3.0, 
+            "type" : "integer", 
+            "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+            "response" : ""
+        }, 
+        {
+            "id" : 4.0, 
+            "type" : "option", 
+            "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+            "options" : [
+                {
+                    "valor" : "Enero"
+                }, 
+                {
+                    "valor" : "Febrero"
+                }, 
+                {
+                    "valor" : "Marzo"
+                }, 
+                {
+                    "valor" : "Abril"
+                }, 
+                {
+                    "valor" : "Mayo"
+                }, 
+                {
+                    "valor" : "Mayo"
+                }, 
+                {
+                    "valor" : "Junio"
+                }, 
+                {
+                    "valor" : "Julio"
+                }, 
+                {
+                    "valor" : "Agosto"
+                }, 
+                {
+                    "valor" : "Septiembre"
+                }, 
+                {
+                    "valor" : "Octubre"
+                }, 
+                {
+                    "valor" : "Noviembre"
+                }, 
+                {
+                    "valor" : "Diciembre"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 5.0, 
+            "question" : "¿EN QUÉ AÑO NACIÓ?", 
+            "type" : "string", 
+            "response" : ""
+        }, 
+        {
+            "id" : 6.0, 
+            "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Si"
+                }, 
+                {
+                    "valor" : "No"
+                }, 
+                {
+                    "valor" : "Nunca asistió"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 7.0, 
+            "question" : "¿Cuál es el curso o año más alto aprobado?", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "0"
+                }, 
+                {
+                    "valor" : "1"
+                }, 
+                {
+                    "valor" : "2"
+                }, 
+                {
+                    "valor" : "3"
+                }, 
+                {
+                    "valor" : "4"
+                }, 
+                {
+                    "valor" : "5"
+                }, 
+                {
+                    "valor" : "6"
+                }, 
+                {
+                    "valor" : "7"
+                }, 
+                {
+                    "valor" : "8"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 8.0, 
+            "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Preescolar"
+                }, 
+                {
+                    "valor" : "Especial o Diferencial"
+                }, 
+                {
+                    "valor" : "Básica o Primaria"
+                }, 
+                {
+                    "valor" : "Media o Secundaria"
+                }, 
+                {
+                    "valor" : "Superior"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+            "id" : 9.0, 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Si"
+                }, 
+                {
+                    "valor" : "No"
+                }
+            ], 
+            "response" : ""
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5be5fecbe3a86b0df61d8d2b"), 
+    "ECN" : "4247641492", 
+    "CFN" : "5481862395", 
+    "idNumber" : "1024536894", 
+    "questions" : [
+        {
+            "id" : 0.0, 
+            "type" : "string", 
+            "question" : "¿Cual es tu nombre completo?", 
+            "response" : "Pedro perez carlitos"
+        }, 
+        {
+            "id" : 0.1, 
+            "type" : "string", 
+            "question" : "¿Cual es tu tipo de documento de identificación?", 
+            "options" : [
+                {
+                    "valor" : "cédula de ciudadanía (CC) "
+                }, 
+                {
+                    "valor" : "tarjeta de identidad (TI)"
+                }, 
+                {
+                    "valor" : "tarjeta pasaporte (TP)"
+                }, 
+                {
+                    "valor" : "registro civil (RC)"
+                }, 
+                {
+                    "valor" : "cédula de extranjería (CE)"
+                }
+            ], 
+            "response" : "CC"
+        }, 
+        {
+            "id" : 0.2, 
+            "type" : "integer", 
+            "question" : "¿Cual es tu numero de identificación?", 
+            "response" : "1024536894"
+        }, 
+        {
+            "id" : 1.0, 
+            "type" : "option", 
+            "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+            "options" : [
+                {
+                    "valor" : "Jefe/a de Hogar"
+                }, 
+                {
+                    "valor" : "Esposo/a o conyuge"
+                }, 
+                {
+                    "valor" : "Conviviente por union civil"
+                }, 
+                {
+                    "valor" : "Conviviente de hecho o pareja"
+                }, 
+                {
+                    "valor" : "Hijo/a"
+                }, 
+                {
+                    "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                }, 
+                {
+                    "valor" : "Hermano/a"
+                }, 
+                {
+                    "valor" : "Padre/Madre"
+                }, 
+                {
+                    "valor" : "Cuñado/a"
+                }, 
+                {
+                    "valor" : "Suegro/a"
+                }, 
+                {
+                    "valor" : "Yerno/Nuera"
+                }, 
+                {
+                    "valor" : "Nieto/a"
+                }, 
+                {
+                    "valor" : "Abuelo/a"
+                }, 
+                {
+                    "valor" : "Otro pariente"
+                }, 
+                {
+                    "valor" : "No pariente"
+                }, 
+                {
+                    "valor" : "Servicio doméstico puertas adentro"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 2.0, 
+            "type" : "option", 
+            "question" : "¿CUÁL ES SU SEXO?", 
+            "options" : [
+                {
+                    "valor" : "Hombre"
+                }, 
+                {
+                    "valor" : "Mujer"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 3.0, 
+            "type" : "integer", 
+            "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+            "response" : ""
+        }, 
+        {
+            "id" : 4.0, 
+            "type" : "option", 
+            "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+            "options" : [
+                {
+                    "valor" : "Enero"
+                }, 
+                {
+                    "valor" : "Febrero"
+                }, 
+                {
+                    "valor" : "Marzo"
+                }, 
+                {
+                    "valor" : "Abril"
+                }, 
+                {
+                    "valor" : "Mayo"
+                }, 
+                {
+                    "valor" : "Mayo"
+                }, 
+                {
+                    "valor" : "Junio"
+                }, 
+                {
+                    "valor" : "Julio"
+                }, 
+                {
+                    "valor" : "Agosto"
+                }, 
+                {
+                    "valor" : "Septiembre"
+                }, 
+                {
+                    "valor" : "Octubre"
+                }, 
+                {
+                    "valor" : "Noviembre"
+                }, 
+                {
+                    "valor" : "Diciembre"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 5.0, 
+            "question" : "¿EN QUÉ AÑO NACIÓ?", 
+            "type" : "string", 
+            "response" : ""
+        }, 
+        {
+            "id" : 6.0, 
+            "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Si"
+                }, 
+                {
+                    "valor" : "No"
+                }, 
+                {
+                    "valor" : "Nunca asistió"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 7.0, 
+            "question" : "¿Cuál es el curso o año más alto aprobado?", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "0"
+                }, 
+                {
+                    "valor" : "1"
+                }, 
+                {
+                    "valor" : "2"
+                }, 
+                {
+                    "valor" : "3"
+                }, 
+                {
+                    "valor" : "4"
+                }, 
+                {
+                    "valor" : "5"
+                }, 
+                {
+                    "valor" : "6"
+                }, 
+                {
+                    "valor" : "7"
+                }, 
+                {
+                    "valor" : "8"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 8.0, 
+            "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Preescolar"
+                }, 
+                {
+                    "valor" : "Especial o Diferencial"
+                }, 
+                {
+                    "valor" : "Básica o Primaria"
+                }, 
+                {
+                    "valor" : "Media o Secundaria"
+                }, 
+                {
+                    "valor" : "Superior"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+            "id" : 9.0, 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Si"
+                }, 
+                {
+                    "valor" : "No"
+                }
+            ], 
+            "response" : ""
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5be5fefee3a86b0df61d8d2c"), 
+    "ECN" : "4247641492", 
+    "CFN" : "5481862395", 
+    "idNumber" : "142578965", 
+    "questions" : [
+        {
+            "id" : 0.0, 
+            "type" : "string", 
+            "question" : "¿Cual es tu nombre completo?", 
+            "response" : "Anderson Grajales"
+        }, 
+        {
+            "id" : 0.1, 
+            "type" : "string", 
+            "question" : "¿Cual es tu tipo de documento de identificación?", 
+            "options" : [
+                {
+                    "valor" : "cédula de ciudadanía (CC) "
+                }, 
+                {
+                    "valor" : "tarjeta de identidad (TI)"
+                }, 
+                {
+                    "valor" : "tarjeta pasaporte (TP)"
+                }, 
+                {
+                    "valor" : "registro civil (RC)"
+                }, 
+                {
+                    "valor" : "cédula de extranjería (CE)"
+                }
+            ], 
+            "response" : "CC"
+        }, 
+        {
+            "id" : 0.2, 
+            "type" : "integer", 
+            "question" : "¿Cual es tu numero de identificación?", 
+            "response" : "142578965"
+        }, 
+        {
+            "id" : 1.0, 
+            "type" : "option", 
+            "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+            "options" : [
+                {
+                    "valor" : "Jefe/a de Hogar"
+                }, 
+                {
+                    "valor" : "Esposo/a o conyuge"
+                }, 
+                {
+                    "valor" : "Conviviente por union civil"
+                }, 
+                {
+                    "valor" : "Conviviente de hecho o pareja"
+                }, 
+                {
+                    "valor" : "Hijo/a"
+                }, 
+                {
+                    "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                }, 
+                {
+                    "valor" : "Hermano/a"
+                }, 
+                {
+                    "valor" : "Padre/Madre"
+                }, 
+                {
+                    "valor" : "Cuñado/a"
+                }, 
+                {
+                    "valor" : "Suegro/a"
+                }, 
+                {
+                    "valor" : "Yerno/Nuera"
+                }, 
+                {
+                    "valor" : "Nieto/a"
+                }, 
+                {
+                    "valor" : "Abuelo/a"
+                }, 
+                {
+                    "valor" : "Otro pariente"
+                }, 
+                {
+                    "valor" : "No pariente"
+                }, 
+                {
+                    "valor" : "Servicio doméstico puertas adentro"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 2.0, 
+            "type" : "option", 
+            "question" : "¿CUÁL ES SU SEXO?", 
+            "options" : [
+                {
+                    "valor" : "Hombre"
+                }, 
+                {
+                    "valor" : "Mujer"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 3.0, 
+            "type" : "integer", 
+            "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+            "response" : ""
+        }, 
+        {
+            "id" : 4.0, 
+            "type" : "option", 
+            "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+            "options" : [
+                {
+                    "valor" : "Enero"
+                }, 
+                {
+                    "valor" : "Febrero"
+                }, 
+                {
+                    "valor" : "Marzo"
+                }, 
+                {
+                    "valor" : "Abril"
+                }, 
+                {
+                    "valor" : "Mayo"
+                }, 
+                {
+                    "valor" : "Mayo"
+                }, 
+                {
+                    "valor" : "Junio"
+                }, 
+                {
+                    "valor" : "Julio"
+                }, 
+                {
+                    "valor" : "Agosto"
+                }, 
+                {
+                    "valor" : "Septiembre"
+                }, 
+                {
+                    "valor" : "Octubre"
+                }, 
+                {
+                    "valor" : "Noviembre"
+                }, 
+                {
+                    "valor" : "Diciembre"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 5.0, 
+            "question" : "¿EN QUÉ AÑO NACIÓ?", 
+            "type" : "string", 
+            "response" : ""
+        }, 
+        {
+            "id" : 6.0, 
+            "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Si"
+                }, 
+                {
+                    "valor" : "No"
+                }, 
+                {
+                    "valor" : "Nunca asistió"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 7.0, 
+            "question" : "¿Cuál es el curso o año más alto aprobado?", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "0"
+                }, 
+                {
+                    "valor" : "1"
+                }, 
+                {
+                    "valor" : "2"
+                }, 
+                {
+                    "valor" : "3"
+                }, 
+                {
+                    "valor" : "4"
+                }, 
+                {
+                    "valor" : "5"
+                }, 
+                {
+                    "valor" : "6"
+                }, 
+                {
+                    "valor" : "7"
+                }, 
+                {
+                    "valor" : "8"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "id" : 8.0, 
+            "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Preescolar"
+                }, 
+                {
+                    "valor" : "Especial o Diferencial"
+                }, 
+                {
+                    "valor" : "Básica o Primaria"
+                }, 
+                {
+                    "valor" : "Media o Secundaria"
+                }, 
+                {
+                    "valor" : "Superior"
+                }
+            ], 
+            "response" : ""
+        }, 
+        {
+            "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+            "id" : 9.0, 
+            "type" : "option", 
+            "options" : [
+                {
+                    "valor" : "Si"
+                }, 
+                {
+                    "valor" : "No"
+                }
+            ], 
+            "response" : ""
+        }
+    ]
+}

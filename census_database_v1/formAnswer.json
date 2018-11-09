@@ -1,0 +1,2068 @@
+{ 
+    "_id" : ObjectId("5be5fd89e3a86b0df61d8d14"), 
+    "seccion" : [
+        {
+            "number" : 1.0, 
+            "name" : "DATOS GENERALES", 
+            "descripcion" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA COMUNA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "NÚMERO DE ORDEN DE LA VIVIENDA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "text", 
+                    "question" : "NUMERO DEL DOMICILIARIO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "text", 
+                    "question" : "PISO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA CALLE O CAMINO", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 2.0, 
+            "name" : "DATOS DE LA VIVIENDA", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "INDIQUE EL TIPO DE VIVIENDA", 
+                    "options" : [
+                        {
+                            "valor" : "Casa"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Vivienda tradicional indígena(ruka, pae pae u otras)"
+                        }, 
+                        {
+                            "valor" : "Pieza en casa antigua o en conventillo"
+                        }, 
+                        {
+                            "valor" : "Mediagua, mejora, rancho o choza"
+                        }, 
+                        {
+                            "valor" : "Móvil (carpa, casa rodante o similar)"
+                        }, 
+                        {
+                            "valor" : "Otro tipo de vivienda particular"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en las paredes exteriores?", 
+                    "options" : [
+                        {
+                            "valor" : "Hormigón armado"
+                        }, 
+                        {
+                            "valor" : "Albañilería: bloque de cemento, piedra o ladrillo"
+                        }, 
+                        {
+                            "valor" : "Tabique forrado por ambas caras(madera o acero)"
+                        }, 
+                        {
+                            "valor" : "Tabique sin forro interior (madera u otro) ."
+                        }, 
+                        {
+                            "valor" : "Adobe, barro, quincha, pirca u otro artesanal tradicional ."
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en la cubierta del techo?", 
+                    "options" : [
+                        {
+                            "valor" : "Tejas o tejuelas de arcilla, metálicas, de cemento,de madera, asfálticas o plásticas"
+                        }, 
+                        {
+                            "valor" : "Losa hormigón"
+                        }, 
+                        {
+                            "valor" : "Planchas metálicas de zinc, cobre, etc.o fibrocemento (tipo pizarreño"
+                        }, 
+                        {
+                            "valor" : "Fonolita o plancha de fieltro embreado"
+                        }, 
+                        {
+                            "valor" : "Paja, coirón, totora o caña"
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }, 
+                        {
+                            "valor" : "Sin cubierta sólida de techo"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en el piso?", 
+                    "options" : [
+                        {
+                            "valor" : "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar;  sobre radier o vigas de madera"
+                        }, 
+                        {
+                            "valor" : "Radier sin revestimiento"
+                        }, 
+                        {
+                            "valor" : "Baldosa de cemento"
+                        }, 
+                        {
+                            "valor" : "Capa de cemento sobre tierra"
+                        }, 
+                        {
+                            "valor" : "Tierra"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PIEZAS DE ESTA VIVIENDA SE USAN EXCLUSIVAMENTE COMO DORMITORIO?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "type" : "option", 
+                    "question" : "El agua que usa esta vivienda proviene principalmente de:", 
+                    "options" : [
+                        {
+                            "valor" : "Red pública ."
+                        }, 
+                        {
+                            "valor" : "Pozo o noria"
+                        }, 
+                        {
+                            "valor" : "Camión aljibe"
+                        }, 
+                        {
+                            "valor" : "Río, vertiente, estero, canal, lago, etc ."
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PERSONAS ALOJARON AQUÍ ANOCHE? No olvide incluir guaguas,niñas, niños y adultos mayores.", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "question" : "DE LAS PERSONAS QUE ALOJARON AQUÍ ANOCHE ¿TODAS COMPARTEN LOS GASTOS PARA ALIMENTACIÓN?", 
+                    "options" : [
+                        {
+                            "valor" : "SI"
+                        }, 
+                        {
+                            "valor" : "NO"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 10.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantos hombres viven en esta casa?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 11.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantas mujeres viven en esta casa?", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 3.0, 
+            "name" : "DATOS DE LAS PERSONAS", 
+            "description" : "", 
+            "idNumber" : "", 
+            "questions" : [
+                {
+                    "id" : 0.0, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu nombre completo?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.1, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu tipo de documento de identificación?", 
+                    "options" : [
+                        {
+                            "valor" : "cédula de ciudadanía (CC) "
+                        }, 
+                        {
+                            "valor" : "tarjeta de identidad (TI)"
+                        }, 
+                        {
+                            "valor" : "tarjeta pasaporte (TP)"
+                        }, 
+                        {
+                            "valor" : "registro civil (RC)"
+                        }, 
+                        {
+                            "valor" : "cédula de extranjería (CE)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.2, 
+                    "type" : "integer", 
+                    "question" : "¿Cual es tu numero de identificación?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+                    "options" : [
+                        {
+                            "valor" : "Jefe/a de Hogar"
+                        }, 
+                        {
+                            "valor" : "Esposo/a o conyuge"
+                        }, 
+                        {
+                            "valor" : "Conviviente por union civil"
+                        }, 
+                        {
+                            "valor" : "Conviviente de hecho o pareja"
+                        }, 
+                        {
+                            "valor" : "Hijo/a"
+                        }, 
+                        {
+                            "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                        }, 
+                        {
+                            "valor" : "Hermano/a"
+                        }, 
+                        {
+                            "valor" : "Padre/Madre"
+                        }, 
+                        {
+                            "valor" : "Cuñado/a"
+                        }, 
+                        {
+                            "valor" : "Suegro/a"
+                        }, 
+                        {
+                            "valor" : "Yerno/Nuera"
+                        }, 
+                        {
+                            "valor" : "Nieto/a"
+                        }, 
+                        {
+                            "valor" : "Abuelo/a"
+                        }, 
+                        {
+                            "valor" : "Otro pariente"
+                        }, 
+                        {
+                            "valor" : "No pariente"
+                        }, 
+                        {
+                            "valor" : "Servicio doméstico puertas adentro"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES SU SEXO?", 
+                    "options" : [
+                        {
+                            "valor" : "Hombre"
+                        }, 
+                        {
+                            "valor" : "Mujer"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+                    "options" : [
+                        {
+                            "valor" : "Enero"
+                        }, 
+                        {
+                            "valor" : "Febrero"
+                        }, 
+                        {
+                            "valor" : "Marzo"
+                        }, 
+                        {
+                            "valor" : "Abril"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Junio"
+                        }, 
+                        {
+                            "valor" : "Julio"
+                        }, 
+                        {
+                            "valor" : "Agosto"
+                        }, 
+                        {
+                            "valor" : "Septiembre"
+                        }, 
+                        {
+                            "valor" : "Octubre"
+                        }, 
+                        {
+                            "valor" : "Noviembre"
+                        }, 
+                        {
+                            "valor" : "Diciembre"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "question" : "¿EN QUÉ AÑO NACIÓ?", 
+                    "type" : "string", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }, 
+                        {
+                            "valor" : "Nunca asistió"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "question" : "¿Cuál es el curso o año más alto aprobado?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "0"
+                        }, 
+                        {
+                            "valor" : "1"
+                        }, 
+                        {
+                            "valor" : "2"
+                        }, 
+                        {
+                            "valor" : "3"
+                        }, 
+                        {
+                            "valor" : "4"
+                        }, 
+                        {
+                            "valor" : "5"
+                        }, 
+                        {
+                            "valor" : "6"
+                        }, 
+                        {
+                            "valor" : "7"
+                        }, 
+                        {
+                            "valor" : "8"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Preescolar"
+                        }, 
+                        {
+                            "valor" : "Especial o Diferencial"
+                        }, 
+                        {
+                            "valor" : "Básica o Primaria"
+                        }, 
+                        {
+                            "valor" : "Media o Secundaria"
+                        }, 
+                        {
+                            "valor" : "Superior"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }
+                    ], 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 4.0, 
+            "name" : "RETROALIMENTACIÓN", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿Cual es el grado de satisfacción con la encuesta?", 
+                    "options" : [
+                        {
+                            "valor" : "Muy satisfecho"
+                        }, 
+                        {
+                            "valor" : "Satisfecho"
+                        }, 
+                        {
+                            "valor" : "Neutro"
+                        }, 
+                        {
+                            "valor" : "Insatisfecho"
+                        }, 
+                        {
+                            "valor" : "Muy insatisfecho"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "¿Tiene algún comentario adicional que añadir?", 
+                    "response" : ""
+                }
+            ]
+        }
+    ], 
+    "ECN" : "2170479856", 
+    "CFN" : "9997814975", 
+    "Confirmado" : false
+}
+{ 
+    "_id" : ObjectId("5be5fda8e3a86b0df61d8d16"), 
+    "seccion" : [
+        {
+            "number" : 1.0, 
+            "name" : "DATOS GENERALES", 
+            "descripcion" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA COMUNA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "NÚMERO DE ORDEN DE LA VIVIENDA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "text", 
+                    "question" : "NUMERO DEL DOMICILIARIO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "text", 
+                    "question" : "PISO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA CALLE O CAMINO", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 2.0, 
+            "name" : "DATOS DE LA VIVIENDA", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "INDIQUE EL TIPO DE VIVIENDA", 
+                    "options" : [
+                        {
+                            "valor" : "Casa"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Vivienda tradicional indígena(ruka, pae pae u otras)"
+                        }, 
+                        {
+                            "valor" : "Pieza en casa antigua o en conventillo"
+                        }, 
+                        {
+                            "valor" : "Mediagua, mejora, rancho o choza"
+                        }, 
+                        {
+                            "valor" : "Móvil (carpa, casa rodante o similar)"
+                        }, 
+                        {
+                            "valor" : "Otro tipo de vivienda particular"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en las paredes exteriores?", 
+                    "options" : [
+                        {
+                            "valor" : "Hormigón armado"
+                        }, 
+                        {
+                            "valor" : "Albañilería: bloque de cemento, piedra o ladrillo"
+                        }, 
+                        {
+                            "valor" : "Tabique forrado por ambas caras(madera o acero)"
+                        }, 
+                        {
+                            "valor" : "Tabique sin forro interior (madera u otro) ."
+                        }, 
+                        {
+                            "valor" : "Adobe, barro, quincha, pirca u otro artesanal tradicional ."
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en la cubierta del techo?", 
+                    "options" : [
+                        {
+                            "valor" : "Tejas o tejuelas de arcilla, metálicas, de cemento,de madera, asfálticas o plásticas"
+                        }, 
+                        {
+                            "valor" : "Losa hormigón"
+                        }, 
+                        {
+                            "valor" : "Planchas metálicas de zinc, cobre, etc.o fibrocemento (tipo pizarreño"
+                        }, 
+                        {
+                            "valor" : "Fonolita o plancha de fieltro embreado"
+                        }, 
+                        {
+                            "valor" : "Paja, coirón, totora o caña"
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }, 
+                        {
+                            "valor" : "Sin cubierta sólida de techo"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en el piso?", 
+                    "options" : [
+                        {
+                            "valor" : "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar;  sobre radier o vigas de madera"
+                        }, 
+                        {
+                            "valor" : "Radier sin revestimiento"
+                        }, 
+                        {
+                            "valor" : "Baldosa de cemento"
+                        }, 
+                        {
+                            "valor" : "Capa de cemento sobre tierra"
+                        }, 
+                        {
+                            "valor" : "Tierra"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PIEZAS DE ESTA VIVIENDA SE USAN EXCLUSIVAMENTE COMO DORMITORIO?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "type" : "option", 
+                    "question" : "El agua que usa esta vivienda proviene principalmente de:", 
+                    "options" : [
+                        {
+                            "valor" : "Red pública ."
+                        }, 
+                        {
+                            "valor" : "Pozo o noria"
+                        }, 
+                        {
+                            "valor" : "Camión aljibe"
+                        }, 
+                        {
+                            "valor" : "Río, vertiente, estero, canal, lago, etc ."
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PERSONAS ALOJARON AQUÍ ANOCHE? No olvide incluir guaguas,niñas, niños y adultos mayores.", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "question" : "DE LAS PERSONAS QUE ALOJARON AQUÍ ANOCHE ¿TODAS COMPARTEN LOS GASTOS PARA ALIMENTACIÓN?", 
+                    "options" : [
+                        {
+                            "valor" : "SI"
+                        }, 
+                        {
+                            "valor" : "NO"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 10.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantos hombres viven en esta casa?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 11.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantas mujeres viven en esta casa?", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 3.0, 
+            "name" : "DATOS DE LAS PERSONAS", 
+            "description" : "", 
+            "idNumber" : "", 
+            "questions" : [
+                {
+                    "id" : 0.0, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu nombre completo?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.1, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu tipo de documento de identificación?", 
+                    "options" : [
+                        {
+                            "valor" : "cédula de ciudadanía (CC) "
+                        }, 
+                        {
+                            "valor" : "tarjeta de identidad (TI)"
+                        }, 
+                        {
+                            "valor" : "tarjeta pasaporte (TP)"
+                        }, 
+                        {
+                            "valor" : "registro civil (RC)"
+                        }, 
+                        {
+                            "valor" : "cédula de extranjería (CE)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.2, 
+                    "type" : "integer", 
+                    "question" : "¿Cual es tu numero de identificación?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+                    "options" : [
+                        {
+                            "valor" : "Jefe/a de Hogar"
+                        }, 
+                        {
+                            "valor" : "Esposo/a o conyuge"
+                        }, 
+                        {
+                            "valor" : "Conviviente por union civil"
+                        }, 
+                        {
+                            "valor" : "Conviviente de hecho o pareja"
+                        }, 
+                        {
+                            "valor" : "Hijo/a"
+                        }, 
+                        {
+                            "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                        }, 
+                        {
+                            "valor" : "Hermano/a"
+                        }, 
+                        {
+                            "valor" : "Padre/Madre"
+                        }, 
+                        {
+                            "valor" : "Cuñado/a"
+                        }, 
+                        {
+                            "valor" : "Suegro/a"
+                        }, 
+                        {
+                            "valor" : "Yerno/Nuera"
+                        }, 
+                        {
+                            "valor" : "Nieto/a"
+                        }, 
+                        {
+                            "valor" : "Abuelo/a"
+                        }, 
+                        {
+                            "valor" : "Otro pariente"
+                        }, 
+                        {
+                            "valor" : "No pariente"
+                        }, 
+                        {
+                            "valor" : "Servicio doméstico puertas adentro"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES SU SEXO?", 
+                    "options" : [
+                        {
+                            "valor" : "Hombre"
+                        }, 
+                        {
+                            "valor" : "Mujer"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+                    "options" : [
+                        {
+                            "valor" : "Enero"
+                        }, 
+                        {
+                            "valor" : "Febrero"
+                        }, 
+                        {
+                            "valor" : "Marzo"
+                        }, 
+                        {
+                            "valor" : "Abril"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Junio"
+                        }, 
+                        {
+                            "valor" : "Julio"
+                        }, 
+                        {
+                            "valor" : "Agosto"
+                        }, 
+                        {
+                            "valor" : "Septiembre"
+                        }, 
+                        {
+                            "valor" : "Octubre"
+                        }, 
+                        {
+                            "valor" : "Noviembre"
+                        }, 
+                        {
+                            "valor" : "Diciembre"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "question" : "¿EN QUÉ AÑO NACIÓ?", 
+                    "type" : "string", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }, 
+                        {
+                            "valor" : "Nunca asistió"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "question" : "¿Cuál es el curso o año más alto aprobado?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "0"
+                        }, 
+                        {
+                            "valor" : "1"
+                        }, 
+                        {
+                            "valor" : "2"
+                        }, 
+                        {
+                            "valor" : "3"
+                        }, 
+                        {
+                            "valor" : "4"
+                        }, 
+                        {
+                            "valor" : "5"
+                        }, 
+                        {
+                            "valor" : "6"
+                        }, 
+                        {
+                            "valor" : "7"
+                        }, 
+                        {
+                            "valor" : "8"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Preescolar"
+                        }, 
+                        {
+                            "valor" : "Especial o Diferencial"
+                        }, 
+                        {
+                            "valor" : "Básica o Primaria"
+                        }, 
+                        {
+                            "valor" : "Media o Secundaria"
+                        }, 
+                        {
+                            "valor" : "Superior"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }
+                    ], 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 4.0, 
+            "name" : "RETROALIMENTACIÓN", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿Cual es el grado de satisfacción con la encuesta?", 
+                    "options" : [
+                        {
+                            "valor" : "Muy satisfecho"
+                        }, 
+                        {
+                            "valor" : "Satisfecho"
+                        }, 
+                        {
+                            "valor" : "Neutro"
+                        }, 
+                        {
+                            "valor" : "Insatisfecho"
+                        }, 
+                        {
+                            "valor" : "Muy insatisfecho"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "¿Tiene algún comentario adicional que añadir?", 
+                    "response" : ""
+                }
+            ]
+        }
+    ], 
+    "ECN" : "4247641492", 
+    "CFN" : "5481862395", 
+    "Confirmado" : false
+}
+{ 
+    "_id" : ObjectId("5be5fddce3a86b0df61d8d18"), 
+    "seccion" : [
+        {
+            "number" : 1.0, 
+            "name" : "DATOS GENERALES", 
+            "descripcion" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA COMUNA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "NÚMERO DE ORDEN DE LA VIVIENDA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "text", 
+                    "question" : "NUMERO DEL DOMICILIARIO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "text", 
+                    "question" : "PISO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA CALLE O CAMINO", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 2.0, 
+            "name" : "DATOS DE LA VIVIENDA", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "INDIQUE EL TIPO DE VIVIENDA", 
+                    "options" : [
+                        {
+                            "valor" : "Casa"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Vivienda tradicional indígena(ruka, pae pae u otras)"
+                        }, 
+                        {
+                            "valor" : "Pieza en casa antigua o en conventillo"
+                        }, 
+                        {
+                            "valor" : "Mediagua, mejora, rancho o choza"
+                        }, 
+                        {
+                            "valor" : "Móvil (carpa, casa rodante o similar)"
+                        }, 
+                        {
+                            "valor" : "Otro tipo de vivienda particular"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en las paredes exteriores?", 
+                    "options" : [
+                        {
+                            "valor" : "Hormigón armado"
+                        }, 
+                        {
+                            "valor" : "Albañilería: bloque de cemento, piedra o ladrillo"
+                        }, 
+                        {
+                            "valor" : "Tabique forrado por ambas caras(madera o acero)"
+                        }, 
+                        {
+                            "valor" : "Tabique sin forro interior (madera u otro) ."
+                        }, 
+                        {
+                            "valor" : "Adobe, barro, quincha, pirca u otro artesanal tradicional ."
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en la cubierta del techo?", 
+                    "options" : [
+                        {
+                            "valor" : "Tejas o tejuelas de arcilla, metálicas, de cemento,de madera, asfálticas o plásticas"
+                        }, 
+                        {
+                            "valor" : "Losa hormigón"
+                        }, 
+                        {
+                            "valor" : "Planchas metálicas de zinc, cobre, etc.o fibrocemento (tipo pizarreño"
+                        }, 
+                        {
+                            "valor" : "Fonolita o plancha de fieltro embreado"
+                        }, 
+                        {
+                            "valor" : "Paja, coirón, totora o caña"
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }, 
+                        {
+                            "valor" : "Sin cubierta sólida de techo"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en el piso?", 
+                    "options" : [
+                        {
+                            "valor" : "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar;  sobre radier o vigas de madera"
+                        }, 
+                        {
+                            "valor" : "Radier sin revestimiento"
+                        }, 
+                        {
+                            "valor" : "Baldosa de cemento"
+                        }, 
+                        {
+                            "valor" : "Capa de cemento sobre tierra"
+                        }, 
+                        {
+                            "valor" : "Tierra"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PIEZAS DE ESTA VIVIENDA SE USAN EXCLUSIVAMENTE COMO DORMITORIO?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "type" : "option", 
+                    "question" : "El agua que usa esta vivienda proviene principalmente de:", 
+                    "options" : [
+                        {
+                            "valor" : "Red pública ."
+                        }, 
+                        {
+                            "valor" : "Pozo o noria"
+                        }, 
+                        {
+                            "valor" : "Camión aljibe"
+                        }, 
+                        {
+                            "valor" : "Río, vertiente, estero, canal, lago, etc ."
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PERSONAS ALOJARON AQUÍ ANOCHE? No olvide incluir guaguas,niñas, niños y adultos mayores.", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "question" : "DE LAS PERSONAS QUE ALOJARON AQUÍ ANOCHE ¿TODAS COMPARTEN LOS GASTOS PARA ALIMENTACIÓN?", 
+                    "options" : [
+                        {
+                            "valor" : "SI"
+                        }, 
+                        {
+                            "valor" : "NO"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 10.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantos hombres viven en esta casa?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 11.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantas mujeres viven en esta casa?", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 3.0, 
+            "name" : "DATOS DE LAS PERSONAS", 
+            "description" : "", 
+            "idNumber" : "", 
+            "questions" : [
+                {
+                    "id" : 0.0, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu nombre completo?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.1, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu tipo de documento de identificación?", 
+                    "options" : [
+                        {
+                            "valor" : "cédula de ciudadanía (CC) "
+                        }, 
+                        {
+                            "valor" : "tarjeta de identidad (TI)"
+                        }, 
+                        {
+                            "valor" : "tarjeta pasaporte (TP)"
+                        }, 
+                        {
+                            "valor" : "registro civil (RC)"
+                        }, 
+                        {
+                            "valor" : "cédula de extranjería (CE)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.2, 
+                    "type" : "integer", 
+                    "question" : "¿Cual es tu numero de identificación?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+                    "options" : [
+                        {
+                            "valor" : "Jefe/a de Hogar"
+                        }, 
+                        {
+                            "valor" : "Esposo/a o conyuge"
+                        }, 
+                        {
+                            "valor" : "Conviviente por union civil"
+                        }, 
+                        {
+                            "valor" : "Conviviente de hecho o pareja"
+                        }, 
+                        {
+                            "valor" : "Hijo/a"
+                        }, 
+                        {
+                            "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                        }, 
+                        {
+                            "valor" : "Hermano/a"
+                        }, 
+                        {
+                            "valor" : "Padre/Madre"
+                        }, 
+                        {
+                            "valor" : "Cuñado/a"
+                        }, 
+                        {
+                            "valor" : "Suegro/a"
+                        }, 
+                        {
+                            "valor" : "Yerno/Nuera"
+                        }, 
+                        {
+                            "valor" : "Nieto/a"
+                        }, 
+                        {
+                            "valor" : "Abuelo/a"
+                        }, 
+                        {
+                            "valor" : "Otro pariente"
+                        }, 
+                        {
+                            "valor" : "No pariente"
+                        }, 
+                        {
+                            "valor" : "Servicio doméstico puertas adentro"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES SU SEXO?", 
+                    "options" : [
+                        {
+                            "valor" : "Hombre"
+                        }, 
+                        {
+                            "valor" : "Mujer"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+                    "options" : [
+                        {
+                            "valor" : "Enero"
+                        }, 
+                        {
+                            "valor" : "Febrero"
+                        }, 
+                        {
+                            "valor" : "Marzo"
+                        }, 
+                        {
+                            "valor" : "Abril"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Junio"
+                        }, 
+                        {
+                            "valor" : "Julio"
+                        }, 
+                        {
+                            "valor" : "Agosto"
+                        }, 
+                        {
+                            "valor" : "Septiembre"
+                        }, 
+                        {
+                            "valor" : "Octubre"
+                        }, 
+                        {
+                            "valor" : "Noviembre"
+                        }, 
+                        {
+                            "valor" : "Diciembre"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "question" : "¿EN QUÉ AÑO NACIÓ?", 
+                    "type" : "string", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }, 
+                        {
+                            "valor" : "Nunca asistió"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "question" : "¿Cuál es el curso o año más alto aprobado?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "0"
+                        }, 
+                        {
+                            "valor" : "1"
+                        }, 
+                        {
+                            "valor" : "2"
+                        }, 
+                        {
+                            "valor" : "3"
+                        }, 
+                        {
+                            "valor" : "4"
+                        }, 
+                        {
+                            "valor" : "5"
+                        }, 
+                        {
+                            "valor" : "6"
+                        }, 
+                        {
+                            "valor" : "7"
+                        }, 
+                        {
+                            "valor" : "8"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Preescolar"
+                        }, 
+                        {
+                            "valor" : "Especial o Diferencial"
+                        }, 
+                        {
+                            "valor" : "Básica o Primaria"
+                        }, 
+                        {
+                            "valor" : "Media o Secundaria"
+                        }, 
+                        {
+                            "valor" : "Superior"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }
+                    ], 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 4.0, 
+            "name" : "RETROALIMENTACIÓN", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿Cual es el grado de satisfacción con la encuesta?", 
+                    "options" : [
+                        {
+                            "valor" : "Muy satisfecho"
+                        }, 
+                        {
+                            "valor" : "Satisfecho"
+                        }, 
+                        {
+                            "valor" : "Neutro"
+                        }, 
+                        {
+                            "valor" : "Insatisfecho"
+                        }, 
+                        {
+                            "valor" : "Muy insatisfecho"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "¿Tiene algún comentario adicional que añadir?", 
+                    "response" : ""
+                }
+            ]
+        }
+    ], 
+    "ECN" : "5388488454", 
+    "CFN" : "4161060033", 
+    "Confirmado" : false
+}
+{ 
+    "_id" : ObjectId("5be5fdf2e3a86b0df61d8d19"), 
+    "seccion" : [
+        {
+            "number" : 1.0, 
+            "name" : "DATOS GENERALES", 
+            "descripcion" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA COMUNA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "NÚMERO DE ORDEN DE LA VIVIENDA", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "text", 
+                    "question" : "NUMERO DEL DOMICILIARIO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "text", 
+                    "question" : "PISO", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "text", 
+                    "question" : "NOMBRE DE LA CALLE O CAMINO", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 2.0, 
+            "name" : "DATOS DE LA VIVIENDA", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "INDIQUE EL TIPO DE VIVIENDA", 
+                    "options" : [
+                        {
+                            "valor" : "Casa"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Departamento en edificio"
+                        }, 
+                        {
+                            "valor" : "Vivienda tradicional indígena(ruka, pae pae u otras)"
+                        }, 
+                        {
+                            "valor" : "Pieza en casa antigua o en conventillo"
+                        }, 
+                        {
+                            "valor" : "Mediagua, mejora, rancho o choza"
+                        }, 
+                        {
+                            "valor" : "Móvil (carpa, casa rodante o similar)"
+                        }, 
+                        {
+                            "valor" : "Otro tipo de vivienda particular"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en las paredes exteriores?", 
+                    "options" : [
+                        {
+                            "valor" : "Hormigón armado"
+                        }, 
+                        {
+                            "valor" : "Albañilería: bloque de cemento, piedra o ladrillo"
+                        }, 
+                        {
+                            "valor" : "Tabique forrado por ambas caras(madera o acero)"
+                        }, 
+                        {
+                            "valor" : "Tabique sin forro interior (madera u otro) ."
+                        }, 
+                        {
+                            "valor" : "Adobe, barro, quincha, pirca u otro artesanal tradicional ."
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en la cubierta del techo?", 
+                    "options" : [
+                        {
+                            "valor" : "Tejas o tejuelas de arcilla, metálicas, de cemento,de madera, asfálticas o plásticas"
+                        }, 
+                        {
+                            "valor" : "Losa hormigón"
+                        }, 
+                        {
+                            "valor" : "Planchas metálicas de zinc, cobre, etc.o fibrocemento (tipo pizarreño"
+                        }, 
+                        {
+                            "valor" : "Fonolita o plancha de fieltro embreado"
+                        }, 
+                        {
+                            "valor" : "Paja, coirón, totora o caña"
+                        }, 
+                        {
+                            "valor" : "Materiales precarios (lata, cartón, plástico, etc.)"
+                        }, 
+                        {
+                            "valor" : "Sin cubierta sólida de techo"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPA en el piso?", 
+                    "options" : [
+                        {
+                            "valor" : "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar;  sobre radier o vigas de madera"
+                        }, 
+                        {
+                            "valor" : "Radier sin revestimiento"
+                        }, 
+                        {
+                            "valor" : "Baldosa de cemento"
+                        }, 
+                        {
+                            "valor" : "Capa de cemento sobre tierra"
+                        }, 
+                        {
+                            "valor" : "Tierra"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PIEZAS DE ESTA VIVIENDA SE USAN EXCLUSIVAMENTE COMO DORMITORIO?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "type" : "option", 
+                    "question" : "El agua que usa esta vivienda proviene principalmente de:", 
+                    "options" : [
+                        {
+                            "valor" : "Red pública ."
+                        }, 
+                        {
+                            "valor" : "Pozo o noria"
+                        }, 
+                        {
+                            "valor" : "Camión aljibe"
+                        }, 
+                        {
+                            "valor" : "Río, vertiente, estero, canal, lago, etc ."
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTAS PERSONAS ALOJARON AQUÍ ANOCHE? No olvide incluir guaguas,niñas, niños y adultos mayores.", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "question" : "DE LAS PERSONAS QUE ALOJARON AQUÍ ANOCHE ¿TODAS COMPARTEN LOS GASTOS PARA ALIMENTACIÓN?", 
+                    "options" : [
+                        {
+                            "valor" : "SI"
+                        }, 
+                        {
+                            "valor" : "NO"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 10.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantos hombres viven en esta casa?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 11.0, 
+                    "type" : "integer", 
+                    "question" : "¿Cuantas mujeres viven en esta casa?", 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 3.0, 
+            "name" : "DATOS DE LAS PERSONAS", 
+            "description" : "", 
+            "idNumber" : "", 
+            "questions" : [
+                {
+                    "id" : 0.0, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu nombre completo?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.1, 
+                    "type" : "string", 
+                    "question" : "¿Cual es tu tipo de documento de identificación?", 
+                    "options" : [
+                        {
+                            "valor" : "cédula de ciudadanía (CC) "
+                        }, 
+                        {
+                            "valor" : "tarjeta de identidad (TI)"
+                        }, 
+                        {
+                            "valor" : "tarjeta pasaporte (TP)"
+                        }, 
+                        {
+                            "valor" : "registro civil (RC)"
+                        }, 
+                        {
+                            "valor" : "cédula de extranjería (CE)"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 0.2, 
+                    "type" : "integer", 
+                    "question" : "¿Cual es tu numero de identificación?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?", 
+                    "options" : [
+                        {
+                            "valor" : "Jefe/a de Hogar"
+                        }, 
+                        {
+                            "valor" : "Esposo/a o conyuge"
+                        }, 
+                        {
+                            "valor" : "Conviviente por union civil"
+                        }, 
+                        {
+                            "valor" : "Conviviente de hecho o pareja"
+                        }, 
+                        {
+                            "valor" : "Hijo/a"
+                        }, 
+                        {
+                            "valor" : "Hijo/a del cónyuge, conviviente o pareja"
+                        }, 
+                        {
+                            "valor" : "Hermano/a"
+                        }, 
+                        {
+                            "valor" : "Padre/Madre"
+                        }, 
+                        {
+                            "valor" : "Cuñado/a"
+                        }, 
+                        {
+                            "valor" : "Suegro/a"
+                        }, 
+                        {
+                            "valor" : "Yerno/Nuera"
+                        }, 
+                        {
+                            "valor" : "Nieto/a"
+                        }, 
+                        {
+                            "valor" : "Abuelo/a"
+                        }, 
+                        {
+                            "valor" : "Otro pariente"
+                        }, 
+                        {
+                            "valor" : "No pariente"
+                        }, 
+                        {
+                            "valor" : "Servicio doméstico puertas adentro"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "option", 
+                    "question" : "¿CUÁL ES SU SEXO?", 
+                    "options" : [
+                        {
+                            "valor" : "Hombre"
+                        }, 
+                        {
+                            "valor" : "Mujer"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 3.0, 
+                    "type" : "integer", 
+                    "question" : "¿CUÁNTOS AÑOS CUMPLIDOS TIENE?", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 4.0, 
+                    "type" : "option", 
+                    "question" : "¿EN QUÉ MES Y AÑO NACIÓ?", 
+                    "options" : [
+                        {
+                            "valor" : "Enero"
+                        }, 
+                        {
+                            "valor" : "Febrero"
+                        }, 
+                        {
+                            "valor" : "Marzo"
+                        }, 
+                        {
+                            "valor" : "Abril"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Mayo"
+                        }, 
+                        {
+                            "valor" : "Junio"
+                        }, 
+                        {
+                            "valor" : "Julio"
+                        }, 
+                        {
+                            "valor" : "Agosto"
+                        }, 
+                        {
+                            "valor" : "Septiembre"
+                        }, 
+                        {
+                            "valor" : "Octubre"
+                        }, 
+                        {
+                            "valor" : "Noviembre"
+                        }, 
+                        {
+                            "valor" : "Diciembre"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 5.0, 
+                    "question" : "¿EN QUÉ AÑO NACIÓ?", 
+                    "type" : "string", 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 6.0, 
+                    "question" : "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }, 
+                        {
+                            "valor" : "Nunca asistió"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 7.0, 
+                    "question" : "¿Cuál es el curso o año más alto aprobado?", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "0"
+                        }, 
+                        {
+                            "valor" : "1"
+                        }, 
+                        {
+                            "valor" : "2"
+                        }, 
+                        {
+                            "valor" : "3"
+                        }, 
+                        {
+                            "valor" : "4"
+                        }, 
+                        {
+                            "valor" : "5"
+                        }, 
+                        {
+                            "valor" : "6"
+                        }, 
+                        {
+                            "valor" : "7"
+                        }, 
+                        {
+                            "valor" : "8"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 8.0, 
+                    "question" : "El curso anteriormente declarado, a cuál de los siguientes niveles corresponde:", 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Preescolar"
+                        }, 
+                        {
+                            "valor" : "Especial o Diferencial"
+                        }, 
+                        {
+                            "valor" : "Básica o Primaria"
+                        }, 
+                        {
+                            "valor" : "Media o Secundaria"
+                        }, 
+                        {
+                            "valor" : "Superior"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "question" : "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?", 
+                    "id" : 9.0, 
+                    "type" : "option", 
+                    "options" : [
+                        {
+                            "valor" : "Si"
+                        }, 
+                        {
+                            "valor" : "No"
+                        }
+                    ], 
+                    "response" : ""
+                }
+            ]
+        }, 
+        {
+            "number" : 4.0, 
+            "name" : "RETROALIMENTACIÓN", 
+            "description" : "", 
+            "questions" : [
+                {
+                    "id" : 1.0, 
+                    "type" : "option", 
+                    "question" : "¿Cual es el grado de satisfacción con la encuesta?", 
+                    "options" : [
+                        {
+                            "valor" : "Muy satisfecho"
+                        }, 
+                        {
+                            "valor" : "Satisfecho"
+                        }, 
+                        {
+                            "valor" : "Neutro"
+                        }, 
+                        {
+                            "valor" : "Insatisfecho"
+                        }, 
+                        {
+                            "valor" : "Muy insatisfecho"
+                        }
+                    ], 
+                    "response" : ""
+                }, 
+                {
+                    "id" : 2.0, 
+                    "type" : "text", 
+                    "question" : "¿Tiene algún comentario adicional que añadir?", 
+                    "response" : ""
+                }
+            ]
+        }
+    ], 
+    "ECN" : "0363437290", 
+    "CFN" : "0839436963", 
+    "Confirmado" : false
+}

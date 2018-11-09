@@ -63,5 +63,10 @@ api.add_resource(collectorLogin, '/collector/login', '/collector/login')
 api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')
 
+# Formulario
+
+# api.add_resource()
+
+
 if __name__ == '__main__':
     app.run()
