@@ -35,16 +35,6 @@ parserAnswerMembers.add_argument(
 parserAnswerMembers.add_argument(
     'idNumber', help='This field cannot be blank', required=True)
 
-# Para validar que las peticiones de insertar respuesta y actualizar respuesta por persona, traigan todo los datos
-parserAnswerMembersIU = reqparse.RequestParser()
-parserAnswerMembersIU.add_argument(
-    'ECN', help='This field cannot be blank', required=True)
-parserAnswerMembersIU.add_argument(
-    'CFN', help='This field cannot be blank', required=True)
-
-parserAnswerMembersIU.add_argument(
-    'idNumber', help='This field cannot be blank', required=True)
-
 
 class getFormbyPeople(Resource):
     # @jwt_required
@@ -61,29 +51,42 @@ class getFormbyPeople(Resource):
 class insertAnswersPeople(Resource):
     # @jwt_required
     def post(self):
-        data = parserAnswerMembersIU.args()
+        form = request.json
+        CFN = form['CFN']
+        ECN = form['ECN']
+        idNumber = form['idNumber']
+        print(idNumber)
+
         messages, success = FormController.insertAnswersPeople(
-            AnswerMembersCollection, data)
+            AnswerMembersCollection, ECN, CFN, idNumber, form)
         return{
             "messages": messages,
             "success": success
         }
+
+
 class findSection(Resource):
+    # @jwt_required
     def get(self):
         CFN = request.args['CFN']
         ECN = request.args['ECN']
         number = request.args['number']
-        res = FormController.findSection(formAnswerCollection, ECN, CFN, number)
+        res = FormController.findSection(
+            formAnswerCollection, ECN, CFN, number)
         if res:
             return res
         return None
+
+
 class updateSection(Resource):
+    # @jwt_required
     def put(self):
         data = request.json
         CFN = request.args['CFN']
         ECN = request.args['ECN']
         number = request.args['number']
-        res = FormController.updateSection(formAnswerCollection, CFN, ECN, number, data)
+        res = FormController.updateSection(
+            formAnswerCollection, CFN, ECN, number, data)
         if res:
             return res
         else:

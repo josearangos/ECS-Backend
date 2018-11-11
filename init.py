@@ -70,11 +70,11 @@ api.add_resource(collectorTokenRefresh,
 
 # Formulario
 
-api.add_resource(getFormbyPeople, '/user/get_form/member',
-                 '/user/get_form/member')
+api.add_resource(getFormbyPeople, '/form/user/get_form/member',
+                 'form//user/get_form/member')
 
-api.add_resource(insertAnswersPeople, '/user/insert_answers/member',
-                 '/user/insert_answers/member')
+api.add_resource(insertAnswersPeople, '/form/user/insertUpdate_answers/member',
+                 '/form/user/insertUpdate_answers/member')
 
 api.add_resource(findSection, '/form/findSection/', '/form/findSection/')
 api.add_resource(updateSection, '/form/updateSection', '/form/updateSection')
