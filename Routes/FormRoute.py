@@ -14,6 +14,7 @@ formAnswerCollection = db.formAnswer
 # Collection donde estan las respuesta de cada integrante de un hogar
 AnswerMembersCollection = db.AnswerMembers
 
+
 # para validar que el JSON del body que trae el formulario por seciones tenga todos los campos
 parserformAnswer = reqparse.RequestParser()
 parserformAnswer.add_argument(
@@ -67,3 +68,23 @@ class insertAnswersPeople(Resource):
             "messages": messages,
             "success": success
         }
+class findSection(Resource):
+    def get(self):
+        CFN = request.args['CFN']
+        ECN = request.args['ECN']
+        number = request.args['number']
+        res = FormController.findSection(formAnswerCollection, ECN, CFN, number)
+        if res:
+            return res
+        return None
+class updateSection(Resource):
+    def put(self):
+        data = request.json
+        CFN = request.args['CFN']
+        ECN = request.args['ECN']
+        number = request.args['number']
+        res = FormController.updateSection(formAnswerCollection, CFN, ECN, number, data)
+        if res:
+            return res
+        else:
+            return None
