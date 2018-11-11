@@ -43,6 +43,10 @@ from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist
 # Collector
 from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector
 
+# Todo lo que tiene que ver con el formulario
+from Routes.FormRoute import getFormbyPeople, insertAnswersPeople
+
+
 # Usuario
 api.add_resource(userLogin, '/user/login', '/user/login')
 api.add_resource(insertCode, '/code/insert', '/code/insert')
@@ -65,7 +69,11 @@ api.add_resource(collectorTokenRefresh,
 
 # Formulario
 
-# api.add_resource()
+api.add_resource(getFormbyPeople, '/user/get_form/member',
+                 '/user/get_form/member')
+
+api.add_resource(insertAnswersPeople, '/user/insert_answers/member',
+                 '/user/insert_answers/member')
 
 
 if __name__ == '__main__':

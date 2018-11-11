@@ -18,8 +18,8 @@ codeCollection = db.codes  # collection donde estan los codigos del censo
 
 # para validar que el JSON del body tenga los campos
 parser = reqparse.RequestParser()
-parser.add_argument('ECS', help='This field cannot be blank', required=True)
-parser.add_argument('CNF', help='This field cannot be blank', required=True)
+parser.add_argument('ECN', help='This field cannot be blank', required=True)
+parser.add_argument('CFN', help='This field cannot be blank', required=True)
 
 
 class insertCode(Resource):

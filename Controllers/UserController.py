@@ -6,18 +6,16 @@ def login(codeCollection, data) -> tuple:
     access_token = "null"
     refresh_token = "null"
     try:
-        ECS = data.ECS
-        CNF = data.CNF
-        codes_response = codeCollection.find_one({"ECS": ECS})
+        ECN = data.ECN
+        CFN = data.CFN
+        codes_response = codeCollection.find_one({"ECS": ECN})
     except Exception as e:
         print(e)
     else:
         if codes_response is not None:
-            if codes_response['CNF'] == CNF:
+            if codes_response['CFN'] == CFN:
                 # el token solo tiene una duracion de 15 minutos
-                access_token = create_access_token(identity=data.ECS)
+                access_token = create_access_token(identity=data.ECN)
                 # con este se puede renovar el acces_token
-                refresh_token = create_refresh_token(identity=data.ECS)
+                refresh_token = create_refresh_token(identity=data.ECN)
     return access_token, refresh_token
-
-
