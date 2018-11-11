@@ -1,9 +1,4 @@
-from flask_jwt_extended import (create_access_token, create_refresh_token,
-                                jwt_required, jwt_refresh_token_required, get_jwt_identity)
-
-import utils.json_encoder as encoder
-
-
+from pymongo import ReturnDocument
 def getFormByPeople(AnswerMembersCollection, data):
     Form = "null"
     try:
@@ -34,3 +29,25 @@ def insertAnswersPeople(AnswerMembersCollection, data) -> tuple:
         success = True
         messages = 'responses of the person recorded successfully'
     return messages, success
+def findSection(formAnswersCollection, ECN, CFN, number):
+    response = formAnswersCollection.find_one({
+        'ECN': ECN,
+        'CFN': CFN
+    },{'_id': False, 'seccion': {'$elemMatch': {'number': int(number)}}})
+    print(response)
+    if response:
+        return response
+    else:
+        return None
+def updateSection(formAnswersSection, CFN, ECN, number, form):
+    response = formAnswersSection.find_one_and_update({
+        'ECN': ECN,
+        'CFN': CFN
+    },{
+        '$set': form
+    }, return_document=ReturnDocument.AFTER,
+    projection={'_id': False})
+    if response:
+        return response
+    else:
+        return None

@@ -38,6 +38,7 @@ def registre(CollectorCollection, data) -> tuple:
 def find(CollectorCollection, id) -> tuple:
     collector = model.Collector()
     _retcollector = collector.get(id)
+    print(_retcollector)
     if _retcollector:
-        return encoder.JSONEncoder().encode(_retcollector.__dict__), 200
+        return _retcollector, 200
     return None, 404

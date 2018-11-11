@@ -27,5 +27,17 @@ def find(AnalistCollection, id) -> tuple:
     analist = model.Analist()
     _retanalist = analist.get(id)
     if _retanalist:
-        return encoder.JSONEncoder().encode(_retanalist.__dict__), 200
+        return _retanalist, 202
     return None, 404
+def insert(AnalistCollection, id, fullName, password, state):
+    analist = model.Analist()
+    res = analist.insert(id, fullName, password, state)
+    message = ""
+    success = False
+    if res:
+        message =  "Analista ingresado con exito"
+        success = True
+    else:
+        message =  "Hubo error al ingresar el analista"
+        success = False
+    return message, success

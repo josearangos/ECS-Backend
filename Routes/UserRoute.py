@@ -31,6 +31,7 @@ class insertCode(Resource):
 class userLogin(Resource):
     def post(self):
         data = parser.parse_args()
+        print(data)
         access_token, refresh_token = UserController.login(
             codeCollection, data)
         return {

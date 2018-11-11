@@ -8,9 +8,8 @@ class Collector:
         self.cellphone = cellphone
         self.password = password
     def get(self, _id):
-        collector = collectors_db.collectors.find_one({'id': _id})
+        collector = collectors_db.collectors.find_one({'id': _id},{'_id': False})
         if collector:
-            self.__init__(**collector)
-            return self
+            return collector
         else:
             return None
