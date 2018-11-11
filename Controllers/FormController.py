@@ -23,10 +23,11 @@ def insertAnswersPeople(AnswerMembersCollection, data) -> tuple:
     messages = ""
     success = False
     try:
-        responde = AnswerMembersCollection.find_one_and_update(
-            {'idNumber': data.idNumber},
-            {'$set': {"ECN": data.ECN, "CFN": data.CFN,
-                      "idNumber": data.idNumber, "questions": [data.questions]}}, upsert=True)
+        responde = AnswerMembersCollection.find_one(
+            {'idNumber': data}, {'_id': False}
+        )
+        # print(responde['questions'])
+        print(data)
     except Exception as e:
         print(e)
         messages = str(e)

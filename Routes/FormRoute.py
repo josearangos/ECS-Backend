@@ -44,9 +44,6 @@ parserAnswerMembersIU.add_argument(
 parserAnswerMembersIU.add_argument(
     'idNumber', help='This field cannot be blank', required=True)
 
-parserAnswerMembersIU.add_argument(
-    'questions', help='This field cannot be blank', required=True)
-
 
 class getFormbyPeople(Resource):
     # @jwt_required
@@ -63,7 +60,7 @@ class getFormbyPeople(Resource):
 class insertAnswersPeople(Resource):
     # @jwt_required
     def post(self):
-        data = parserAnswerMembersIU.parse_args()
+        data = parserAnswerMembersIU.args()
         messages, success = FormController.insertAnswersPeople(
             AnswerMembersCollection, data)
         return{
