@@ -8,7 +8,7 @@ def login(codeCollection, data) -> tuple:
     try:
         ECN = data.ECN
         CFN = data.CFN
-        codes_response = codeCollection.find_one({"ECS": ECN})
+        codes_response = codeCollection.find_one({"ECN": ECN})
     except Exception as e:
         print(e)
     else:
