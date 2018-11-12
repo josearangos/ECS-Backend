@@ -13,3 +13,4 @@ certifi==2018.1.18
 Flask-JWT
 flask-jwt-extended
 gunicorn
+Flask-Cors==3.0.2
