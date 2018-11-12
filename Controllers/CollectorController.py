@@ -4,6 +4,8 @@ from flask_jwt_extended import (create_access_token, create_refresh_token,
 from flask import json, jsonify
 import Models.CollectorModel as model
 import utils.json_encoder as encoder
+
+
 def login(codeCollection, data) -> tuple:
     access_token = "null"
     refresh_token = "null"
@@ -23,7 +25,7 @@ def login(codeCollection, data) -> tuple:
     return access_token, refresh_token
 
 
-def registre(CollectorCollection, data) -> tuple:
+def registre(CollectorCollection, id, data) -> tuple:
     message = ""
     success = False
     try:
@@ -35,6 +37,8 @@ def registre(CollectorCollection, data) -> tuple:
         success = True
         message = 'User save successfully'
     return success, message
+
+
 def find(CollectorCollection, id) -> tuple:
     collector = model.Collector()
     _retcollector = collector.get(id)
@@ -42,9 +46,12 @@ def find(CollectorCollection, id) -> tuple:
     if _retcollector:
         return _retcollector, 200
     return None, 404
+
+
 def getCodes(CollectorCodeCollection, collectorId) -> tuple:
     print(collectorId)
-    data = CollectorCodeCollection.find_one({'collectorId': collectorId},{'_id': False})
+    data = CollectorCodeCollection.find_one(
+        {'collectorId': collectorId}, {'_id': False})
     print(data)
     if data:
         return data, 202

@@ -34,22 +34,31 @@ class analistTokenRefresh(Resource):
         print(current_user)
         access_token = create_access_token(identity=current_user)
         return {'access_token': access_token}
+
+
 class findAnalist(Resource):
-    @jwt_required
+    # @jwt_required
     def get(self):
         id = request.args
         data, status = AnalistController.find(AnalistCollection, id['id'])
         return data, status
+
+
 class insertAnalist(Resource):
-    @jwt_required
+    # @jwt_required
     def post(self):
         parser = reqparse.RequestParser()
-        parser.add_argument('id', help='This field cannot be blank', required=True)
-        parser.add_argument('fullName', help='This field cannot be blank', required=True)
-        parser.add_argument('password', help='This field cannot be blank', required=True)
-        parser.add_argument('state', help='This field cannot be blank', required=True)
+        parser.add_argument(
+            'id', help='This field cannot be blank', required=True)
+        parser.add_argument(
+            'fullName', help='This field cannot be blank', required=True)
+        parser.add_argument(
+            'password', help='This field cannot be blank', required=True)
+        parser.add_argument(
+            'state', help='This field cannot be blank', required=True)
         data = parser.parse_args()
-        message, success = AnalistController.insert(AnalistCollection, data.id, data.fullName, data.password, data.state)
+        message, success = AnalistController.insert(
+            AnalistCollection, data.id, data.fullName, data.password, data.state)
         return {
             "message": message,
             "success": success

@@ -60,8 +60,8 @@ api.add_resource(analistTokenRefresh, '/analist/tokenRefresh',
 api.add_resource(insertAnalist, '/analist/register', '/analist/register')
 api.add_resource(findAnalist, '/analist/show_analist', '/analist/show_analist')
 # Collector
-api.add_resource(registreCollector, '/collector/registre',
-                 '/collector/registre')
+api.add_resource(registreCollector, '/collector/register',
+                 '/collector/register')
 api.add_resource(findCollector, '/collector/show_collector',
                  '/collector/show_collector')
 api.add_resource(collectorLogin, '/collector/login', '/collector/login')
