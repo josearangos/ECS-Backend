@@ -7,7 +7,7 @@ import storage as st
 db = st.connect()
 # collection donde estan toda la info de los analistas
 CollectorCollection = db.collectors
-CollectorCodesCollection = db.collectors_codes
+CollectorCodesCollection = db.collector_codes
 
 # para validar que el JSON del body tenga los campos
 parser = reqparse.RequestParser()
@@ -64,9 +64,12 @@ class findCollector(Resource):
         data, status = CollectorController.find(
             CollectorCollection, id['id'])
         return data, status
+
+
 class showCodes(Resource):
     # @jwt_required
     def get(self):
         collectorId = request.args
-        data, status = CollectorController.getCodes(CollectorCodesCollection, collectorId['id'])
+        data, status = CollectorController.getCodes(
+            CollectorCodesCollection, collectorId['id'])
         return data, status
