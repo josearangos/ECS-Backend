@@ -70,7 +70,36 @@ def updateSection(formAnswersSection, CFN, ECN, number, form):
         '$set': form
     }, return_document=ReturnDocument.AFTER,
         projection={'_id': False})
+    message = ''
+    success = False
     if response:
-        return response
+        message = 'Actualización hecha con éxito'
+        success = True
     else:
-        return None
+        message = 'No se pudo actualizar el formulario'
+        success = False
+    return message, success
+
+def getStatistics(formAnswersSection, code_collectors):
+    response = formAnswersSection.find({})
+    cnt = response.count()
+    response = formAnswersSection.find({'Confirmado': 'false'})
+    cntp = response.count()
+
+    confirmados = cnt - cntp
+    noconfirmados = cntp
+
+    response = code_collectors.find({})
+    cnt = response.count()
+    response = code_collectors.find({'entregado': 'false'})
+    cntp = response.count()
+
+    entregados= cnt - cntp
+    noentregados = cntp
+
+    return {
+        'confirmed_forms': confirmados,
+        'no_confirmed_forms': noconfirmados,
+        'delivered_forms': entregados,
+        'no_delivered_forms': noentregados
+    }
