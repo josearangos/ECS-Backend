@@ -47,11 +47,12 @@ class collectorTokenRefresh(Resource):
 
 
 class registreCollector(Resource):
-    @jwt_required  # esta notacion indica que necesita obligatoriamente un token
+    # @jwt_required  # esta notacion indica que necesita obligatoriamente un token
     def post(self):
-        data = parserCollector.parse_args()
+        data = request.json
+        id = data['id']
         success, message = CollectorController.registre(
-            CollectorCollection, data)
+            CollectorCollection, id, data)
         return {'message': message, "success": success}
 
 

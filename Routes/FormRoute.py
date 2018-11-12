@@ -9,6 +9,12 @@ import Controllers.FormController as FormController
 import storage as st
 db = st.connect()
 
+#db_CN = st.connectCensusNight()
+
+# Base de datos que simula la noche del censo
+#formAnswerCollection_CN = db_CN.formAnswerCollection_CN
+#AnswerMembersCollection_CN = db_CN.AnswerMembersCollection_CN
+
 # collection donde estan las respuestas del censo de todos los hogares
 formAnswerCollection = db.formAnswer
 # Collection donde estan las respuesta de cada integrante de un hogar
@@ -36,8 +42,25 @@ parserAnswerMembers.add_argument(
     'idNumber', help='This field cannot be blank', required=True)
 
 
-class getFormbyPeople(Resource):
+class censusNight(Resource):
     # @jwt_required
+    def post(self):
+        data = request.json
+        start = data['start']
+        if start:
+            messages, success = FormController.censusNight()
+        else:
+            messages = 'No start Census Night'
+            success = False
+
+        return{
+            "messages": messages,
+            "success": success
+        }
+
+
+class getFormbyPeople(Resource):
+    @jwt_required
     def post(self):
         data = parserAnswerMembers.parse_args()
         Form = FormController.getFormByPeople(AnswerMembersCollection, data)
@@ -49,14 +72,12 @@ class getFormbyPeople(Resource):
 
 
 class insertAnswersPeople(Resource):
-    # @jwt_required
+    @jwt_required
     def post(self):
         form = request.json
         CFN = form['CFN']
         ECN = form['ECN']
         idNumber = form['idNumber']
-        print(idNumber)
-
         messages, success = FormController.insertAnswersPeople(
             AnswerMembersCollection, ECN, CFN, idNumber, form)
         return{

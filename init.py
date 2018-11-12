@@ -44,7 +44,7 @@ from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist, 
 from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector
 
 # Todo lo que tiene que ver con el formulario
-from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection
+from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection, censusNight
 
 
 # Usuario
@@ -69,6 +69,9 @@ api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')
 
 # Formulario
+# simular Noche del censo
+api.add_resource(censusNight, '/form/censusNight', '/form/censusNight')
+
 
 api.add_resource(getFormbyPeople, '/form/user/get_form/member',
                  'form//user/get_form/member')

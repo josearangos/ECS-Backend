@@ -12,3 +12,4 @@ Werkzeug==0.14.1
 certifi==2018.1.18
 Flask-JWT
 flask-jwt-extended
+gunicorn

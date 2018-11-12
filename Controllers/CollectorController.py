@@ -4,6 +4,9 @@ from flask_jwt_extended import (create_access_token, create_refresh_token,
 from flask import json, jsonify
 import Models.CollectorModel as model
 import utils.json_encoder as encoder
+from pymongo import ReturnDocument
+
+
 def login(codeCollection, data) -> tuple:
     access_token = "null"
     refresh_token = "null"
@@ -23,11 +26,20 @@ def login(codeCollection, data) -> tuple:
     return access_token, refresh_token
 
 
-def registre(CollectorCollection, data) -> tuple:
+def registre(CollectorCollection, id, data) -> tuple:
     message = ""
-    success = False
+    success = False    
     try:
-        CollectorCollection.insert(data)
+        response = CollectorCollection.find_one_and_update({
+            'id': id
+        }, {
+            '$set': data
+        },
+            projection={'_id': False},
+            upsert=True,
+            return_document=ReturnDocument.AFTER)
+        if response:
+            success = True
     except Exception as e:
         print(e)
         message = str(e)
@@ -35,6 +47,8 @@ def registre(CollectorCollection, data) -> tuple:
         success = True
         message = 'User save successfully'
     return success, message
+
+
 def find(CollectorCollection, id) -> tuple:
     collector = model.Collector()
     _retcollector = collector.get(id)

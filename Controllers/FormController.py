@@ -1,4 +1,12 @@
 from pymongo import ReturnDocument
+import storage as st
+
+
+def censusNight() -> tuple:
+    messages = "Census Night Start "
+    success = True
+    st.connectCensusNight()
+    return messages, success
 
 
 def getFormByPeople(AnswerMembersCollection, data):

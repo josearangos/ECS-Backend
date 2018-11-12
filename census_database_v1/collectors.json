@@ -6998,3 +6998,24 @@
     "password" : "9wADNo", 
     "cellphone" : "234-355-8219"
 }
+{ 
+    "_id" : ObjectId("5be87cf3b172762beed72932"), 
+    "id" : "70430734", 
+    "fullName" : "wilfer antonio velez", 
+    "password" : "123456", 
+    "cellphone" : "25424398"
+}
+{ 
+    "_id" : ObjectId("5be8842169031e666aafc42a"), 
+    "id" : "704307345", 
+    "cellphone" : "25424398", 
+    "fullName" : "wilfer antonio velesz", 
+    "password" : "123456"
+}
+{ 
+    "_id" : ObjectId("5be8993069031e666aafdfee"), 
+    "id" : "704307349", 
+    "cellphone" : "25424aaa398", 
+    "fullName" : "Juanes antonio velesz", 
+    "password" : "123456"
+}
