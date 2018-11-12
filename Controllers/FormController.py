@@ -80,10 +80,11 @@ def updateSection(formAnswersSection, CFN, ECN, number, form):
         success = False
     return message, success
 
+
 def getStatistics(formAnswersSection, code_collectors):
     response = formAnswersSection.find({})
     cnt = response.count()
-    response = formAnswersSection.find({'Confirmado': 'false'})
+    response = formAnswersSection.find({'Confirmado': False})
     cntp = response.count()
 
     confirmados = cnt - cntp
@@ -91,10 +92,10 @@ def getStatistics(formAnswersSection, code_collectors):
 
     response = code_collectors.find({})
     cnt = response.count()
-    response = code_collectors.find({'entregado': 'false'})
+    response = code_collectors.find({'entregado': False})
     cntp = response.count()
 
-    entregados= cnt - cntp
+    entregados = cnt - cntp
     noentregados = cntp
 
     return {
