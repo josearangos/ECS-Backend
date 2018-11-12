@@ -112,3 +112,7 @@ class updateSection(Resource):
             return res
         else:
             return None
+class showStatistics(Resource):
+    def get(self):
+        data = FormController.getStatistics(formAnswerCollection, db.collector_codes)
+        return data
