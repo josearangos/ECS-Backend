@@ -1,4 +1,4 @@
-https: // temporal-ecs.herokuapp.com/from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify
 from flask_jwt_extended import JWTManager
 
 from flask_jwt_extended import (create_access_token, create_refresh_token,
