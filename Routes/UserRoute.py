@@ -57,6 +57,13 @@ class TokenRefresh(Resource):
         return {'access_token': access_token}
 
 
+class TestDeployIntegrate(Resource):
+    def get(self):
+        return{
+            'Saludo': 'Integración continua'
+        }
+
+
 """
 Para saber el usuario actual con el token se usa
 current_user = get_jwt_identity()

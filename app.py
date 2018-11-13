@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+https: // temporal-ecs.herokuapp.com/from flask import Flask, request, jsonify
 from flask_jwt_extended import JWTManager
 
 from flask_jwt_extended import (create_access_token, create_refresh_token,
@@ -37,7 +37,7 @@ for ex in default_exceptions:
 
 # importamos todas las rutas de nuestra API
 # Usuario
-from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh
+from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh, TestDeployIntegrate
 # Analista
 from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist, insertAnalist
 # Collector
@@ -85,5 +85,10 @@ api.add_resource(showStatistics, '/general/show_statistics',
 
 api.add_resource(findSection, '/form/findSection/', '/form/findSection/')
 api.add_resource(updateSection, '/form/updateSection', '/form/updateSection')
+
+
+api.add_resource(TestDeployIntegrate, 'integration', 'integration')
+
+
 if __name__ == '__main__':
     app.run()
