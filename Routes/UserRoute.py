@@ -60,7 +60,7 @@ class TokenRefresh(Resource):
 class TestDeployIntegrate(Resource):
     def get(self):
         return{
-            'Saludar': 'Integración continua'
+            'Saludar': 'Integración continua  es la verga'
         }
 
 
