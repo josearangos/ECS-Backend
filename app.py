@@ -87,7 +87,7 @@ api.add_resource(findSection, '/form/findSection/', '/form/findSection/')
 api.add_resource(updateSection, '/form/updateSection', '/form/updateSection')
 
 
-api.add_resource(TestDeployIntegrate, 'integration', 'integration')
+api.add_resource(TestDeployIntegrate, '/integration', '/integration')
 
 
 if __name__ == '__main__':
