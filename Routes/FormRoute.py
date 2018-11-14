@@ -9,11 +9,11 @@ import Controllers.FormController as FormController
 import storage as st
 db = st.connect()
 
-#db_CN = st.connectCensusNight()
+db_CN = st.connectCensusNight()
 
 # Base de datos que simula la noche del censo
-#formAnswerCollection_CN = db_CN.formAnswerCollection_CN
-#AnswerMembersCollection_CN = db_CN.AnswerMembersCollection_CN
+formAnswerCollection_CN = db_CN.formAnswerCollection_CN
+AnswerMembersCollection_CN = db_CN.AnswerMembersCollection_CN
 
 # collection donde estan las respuestas del censo de todos los hogares
 formAnswerCollection = db.formAnswer
@@ -48,7 +48,8 @@ class censusNight(Resource):
         data = request.json
         start = data['start']
         if start:
-            messages, success = FormController.censusNight()
+            messages, success = FormController.censusNight(
+                formAnswerCollection, AnswerMembersCollection, formAnswerCollection_CN, AnswerMembersCollection_CN)
         else:
             messages = 'No start Census Night'
             success = False
@@ -112,7 +113,10 @@ class updateSection(Resource):
             return res
         else:
             return None
+
+
 class showStatistics(Resource):
     def get(self):
-        data = FormController.getStatistics(formAnswerCollection, db.collector_codes)
+        data = FormController.getStatistics(
+            formAnswerCollection, db.collector_codes)
         return data

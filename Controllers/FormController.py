@@ -2,10 +2,25 @@ from pymongo import ReturnDocument
 import storage as st
 
 
-def censusNight() -> tuple:
+def censusNight(formAnswerCollection, AnswerMembersCollection, formAnswerCollection_CN, AnswerMembersCollection_CN) -> tuple:
     messages = "Census Night Start "
     success = True
-    st.connectCensusNight()
+    formAnswerConfirm = formAnswerCollection.find(
+        {'Confirmado': True})
+    formAnswerCollection_CN.insert(formAnswerConfirm)
+    formAnswerConfirmAux = formAnswerCollection_CN.find()
+    aux = list(formAnswerConfirmAux)
+    print(aux)
+    for AnswerMember in aux:
+        ECN = AnswerMember['ECN']
+        CFN = AnswerMember['CFN']
+        answer = AnswerMembersCollection.find(
+            {'ECN': ECN, 'CFN': CFN}, {'_id': False})
+        array = list(answer)
+        print(array)
+
+        if len(array) > 0:
+            AnswerMembersCollection_CN.insert(array)
     return messages, success
 
 

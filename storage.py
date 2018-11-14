@@ -22,16 +22,12 @@ def connectCensusNight():
     # Establish connection
     # print(config['MONGODB']['MONGO_URL'])
     #client = MongoClient(config['MONGODB']['MONGO_URL'])
-    uri = config['MONGODB']['ConnectionString']
+    uri = config['MONGODB']['ConnectionStringCensusNight']
     client = MongoClient(uri)
     # Get the database
-    db_census_night = client.database_census_night
-    client.admin.command('copydb',
-                         fromdb='census_database_v1',
-                         todb='db_census_night')
-
+    db_CN = client.db_census_night
     #db.authenticate(name=config['MONGODB']['MONGO_USERNAME'], password=config['MONGODB']['MONGO_USERNAME'])
-    # db_census_night
+    return db_CN
 
 
 def migrar_Bd_Other_Server():
