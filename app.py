@@ -44,7 +44,7 @@ from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist, 
 from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector
 
 # Todo lo que tiene que ver con el formulario
-from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection, censusNight, showStatistics
+from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection, censusNight, showStatistics, confirmForm
 
 
 # Usuario
@@ -79,6 +79,7 @@ api.add_resource(getFormbyPeople, '/form/user/get_form/member',
 api.add_resource(insertAnswersPeople, '/form/user/insertUpdate_answers/member',
                  '/form/user/insertUpdate_answers/member')
 
+
 # General
 api.add_resource(showStatistics, '/general/show_statistics',
                  '/general/show_statistics')
@@ -86,6 +87,7 @@ api.add_resource(showStatistics, '/general/show_statistics',
 api.add_resource(findSection, '/form/findSection/', '/form/findSection/')
 api.add_resource(updateSection, '/form/updateSection', '/form/updateSection')
 
+api.add_resource(confirmForm, 'form/confirm', 'form/confirm')
 
 api.add_resource(TestDeployIntegrate, '/integration', '/integration')
 

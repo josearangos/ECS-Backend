@@ -7,6 +7,7 @@ from flask_jwt_extended import (create_access_token, create_refresh_token,
 import Controllers.FormController as FormController
 
 import storage as st
+
 db = st.connect()
 
 db_CN = st.connectCensusNight()
@@ -19,7 +20,6 @@ AnswerMembersCollection_CN = db_CN.AnswerMembersCollection_CN
 formAnswerCollection = db.formAnswer
 # Collection donde estan las respuesta de cada integrante de un hogar
 AnswerMembersCollection = db.AnswerMembers
-
 
 # para validar que el JSON del body que trae el formulario por seciones tenga todos los campos
 parserformAnswer = reqparse.RequestParser()
@@ -54,7 +54,7 @@ class censusNight(Resource):
             messages = 'No start Census Night'
             success = False
 
-        return{
+        return {
             "messages": messages,
             "success": success
         }
@@ -69,6 +69,7 @@ class getFormbyPeople(Resource):
             "form": Form
         }
 
+
 # Este solo debe ser llamado la primera vez luego utilizar update
 
 
@@ -81,14 +82,14 @@ class insertAnswersPeople(Resource):
         idNumber = form['idNumber']
         messages, success = FormController.insertAnswersPeople(
             AnswerMembersCollection, ECN, CFN, idNumber, form)
-        return{
+        return {
             "messages": messages,
             "success": success
         }
 
 
 class findSection(Resource):
-    # @jwt_required
+    @jwt_required
     def get(self):
         CFN = request.args['CFN']
         ECN = request.args['ECN']
@@ -101,22 +102,33 @@ class findSection(Resource):
 
 
 class updateSection(Resource):
-    # @jwt_required
+    @jwt_required
     def put(self):
         data = request.json
         CFN = request.args['CFN']
         ECN = request.args['ECN']
         number = request.args['number']
-        res = FormController.updateSection(
+        message, success = FormController.updateSection(
             formAnswerCollection, CFN, ECN, number, data)
-        if res:
-            return res
-        else:
-            return None
-
+        return {
+            'message': message,
+            'success': success
+        }
 
 class showStatistics(Resource):
+    @jwt_required
     def get(self):
         data = FormController.getStatistics(
             formAnswerCollection, db.collector_codes)
         return data
+class confirmForm(Resource):
+    @jwt_required
+    def post(self):
+        data = request.json
+        ECN = data['ECN']
+        CFN = data['CFN']
+        message, success = FormController.confirmForm(formAnswerCollection, ECN, CFN)
+        return {
+            'message': message,
+            'success': success
+        }
