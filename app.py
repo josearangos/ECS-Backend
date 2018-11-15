@@ -67,7 +67,6 @@ api.add_resource(findCollector, '/collector/show_collector',
 api.add_resource(collectorLogin, '/collector/login', '/collector/login')
 api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')
-
 api.add_resource(showCodes, '/collector/show_codes', '/collector/show_codes')
 
 # Formulario

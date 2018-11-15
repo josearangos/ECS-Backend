@@ -67,9 +67,11 @@ class findCollector(Resource):
 
 
 class showCodes(Resource):
-    @jwt_required
+    #@jwt_required
     def get(self):
         collectorId = request.args
         data, status = CollectorController.getCodes(
             CollectorCodesCollection, collectorId['id'])
-        return data, status
+        print(data)
+        if status == 202:
+            return data

@@ -49,11 +49,13 @@ def find(CollectorCollection, id) -> tuple:
 
 
 def getCodes(CollectorCodeCollection, collectorId) -> tuple:
-    print(collectorId)
-    data = CollectorCodeCollection.find_one(
-        {'collectorId': collectorId}, {'_id': False})
-    print(data)
+    print(id)
+    data = CollectorCodeCollection.find(
+        {'collectorId': collectorId}, {'_id': False, 'collectorId': False})
+    res = []
+    for doc in data:
+        res.append(doc)
     if data:
-        return data, 202
+        return res, 202
     else:
         return None, 404
