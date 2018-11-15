@@ -44,7 +44,7 @@ from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist, 
 from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector, showCodes
 
 # Todo lo que tiene que ver con el formulario
-from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection, censusNight, showStatistics, confirmForm
+from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection, censusNight, showStatistics, confirmForm, familyIdentifiers
 
 
 # Usuario
@@ -55,7 +55,8 @@ api.add_resource(TokenRefresh, '/user/tokenRefresh', '/user/tokenRefresh')
 api.add_resource(currentEntity, '/current/entity', '/current/entity')
 
 # Analista
-api.add_resource(analistLogin, '/analist/login', '/analist/login')
+api.add_resource(analistLogin, '/analist/login',
+                 '/analget_jwt_identityist/login')
 api.add_resource(analistTokenRefresh, '/analist/tokenRefresh',
                  '/analist/tokenRefresh')
 api.add_resource(insertAnalist, '/analist/register', '/analist/register')
@@ -81,6 +82,8 @@ api.add_resource(getFormbyPeople, '/form/user/get_form/member',
 api.add_resource(insertAnswersPeople, '/form/user/insertUpdate_answers/member',
                  '/form/user/insertUpdate_answers/member')
 
+api.add_resource(familyIdentifiers, '/form/family_identifiers/',
+                 '/form/family_identifiers/')
 
 # General
 api.add_resource(showStatistics, '/general/show_statistics',

@@ -136,3 +136,14 @@ class confirmForm(Resource):
             'message': message,
             'success': success
         }
+
+
+class familyIdentifiers(Resource):
+    # @jwt_required
+    def post(self):
+        data = request.json
+        ECN = data['ECN']
+        CFN = data['CFN']
+        return {
+            "family_identifiers": FormController.familyIdentifiers(ECN, CFN, AnswerMembersCollection)
+        }

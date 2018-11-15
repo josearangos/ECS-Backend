@@ -80,7 +80,8 @@ def findSection(formAnswersCollection, ECN, CFN, number):
 def updateSection(formAnswersSection, CFN, ECN, number, form):
     response = formAnswersSection.find_one_and_update({
         'ECN': ECN,
-        'CFN': CFN
+        'CFN': CFN,
+        'seccion.number': number
     }, {
         '$set': form
     }, return_document=ReturnDocument.AFTER,
@@ -140,3 +141,15 @@ def confirmForm(formAnswersSection, ECN, CFN):
         success = False
         message = "No se ha podido confirmar el formulario"
     return message, success
+
+
+def familyIdentifiers(ECN, CFN, AnswerMembersCollection):
+    family_identifiers = (list(AnswerMembersCollection.find(
+        {'ECN': ECN, 'CFN': CFN}, {'_id': False, 'idNumber': 1})))
+
+    family_identifiersAux = []
+
+    for faux in family_identifiers:
+        family_identifiersAux.append(faux['idNumber'])
+
+    return family_identifiersAux
