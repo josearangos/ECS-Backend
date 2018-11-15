@@ -2,7 +2,8 @@ from pymongo import ReturnDocument
 import storage as st
 
 
-def censusNight(formAnswerCollection, AnswerMembersCollection, formAnswerCollection_CN, AnswerMembersCollection_CN) -> tuple:
+def censusNight(formAnswerCollection, AnswerMembersCollection, formAnswerCollection_CN,
+                AnswerMembersCollection_CN) -> tuple:
     messages = "Census Night Start "
     success = True
     formAnswerConfirm = formAnswerCollection.find(
@@ -36,6 +37,7 @@ def getFormByPeople(AnswerMembersCollection, data):
         print(e)
     return Form
 
+
 # Validar que traiga todo los campos de las preguntas
 
 
@@ -66,11 +68,11 @@ def insertAnswersPeople(AnswerMembersCollection, ECN, CFN, idNumber, form) -> tu
 
 
 def findSection(formAnswersCollection, ECN, CFN, number):
+    print((ECN, CFN, number))
     response = formAnswersCollection.find_one({
         'ECN': ECN,
         'CFN': CFN
     }, {'_id': False, 'seccion': {'$elemMatch': {'number': int(number)}}})
-    print(response)
     if response:
         return response
     else:
@@ -82,7 +84,9 @@ def updateSection(formAnswersSection, CFN, ECN, number, form):
         'ECN': ECN,
         'CFN': CFN
     }, {
-        '$set': form
+        '$set': {
+            'seccion.' + str(int(number) - 1): form['seccion'][0]
+        }
     }, return_document=ReturnDocument.AFTER,
         projection={'_id': False},
         upsert=True)
