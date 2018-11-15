@@ -72,6 +72,5 @@ class showCodes(Resource):
         collectorId = request.args
         data, status = CollectorController.getCodes(
             CollectorCodesCollection, collectorId['id'])
-        print(data)
         if status == 202:
             return data
