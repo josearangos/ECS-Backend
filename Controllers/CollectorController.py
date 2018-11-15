@@ -2,6 +2,8 @@ from flask_jwt_extended import (create_access_token, create_refresh_token,
                                 jwt_required, jwt_refresh_token_required, get_jwt_identity)
 
 from flask import json, jsonify
+from pymongo import ReturnDocument
+
 import Models.CollectorModel as model
 import utils.json_encoder as encoder
 
@@ -49,7 +51,7 @@ def find(CollectorCollection, id) -> tuple:
 
 
 def getCodes(CollectorCodeCollection, collectorId) -> tuple:
-    print(id)
+    # print(id)
     data = CollectorCodeCollection.find(
         {'collectorId': collectorId}, {'_id': False, 'collectorId': False})
     res = []
@@ -59,3 +61,28 @@ def getCodes(CollectorCodeCollection, collectorId) -> tuple:
         return res, 202
     else:
         return None, 404
+
+
+def deliverCode(CollectorCodesCollection, ECN, CFN, collectorId):
+    res = CollectorCodesCollection.find_one_and_update({
+        'ECN': ECN,
+        'CFN': CFN,
+        'collectorId': collectorId
+    }, {
+        '$set': {
+            'entregado': True
+        }
+    }, return_document=ReturnDocument.AFTER,
+        projection={
+            '_id': False
+        },
+        upsert=False)
+    success = False
+    message = ""
+    if res:
+        success = True
+        message = "the code was delivered successfully"
+    else:
+        success = False
+        message = "the code was not delivered successfully"
+    return message, success

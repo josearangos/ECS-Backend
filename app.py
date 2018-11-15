@@ -41,7 +41,7 @@ from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh
 # Analista
 from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist, insertAnalist
 # Collector
-from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector, showCodes
+from Routes.CollectorRoute import collectorLogin, collectorTokenRefresh, registreCollector, findCollector, showCodes, deliverCode
 
 # Todo lo que tiene que ver con el formulario
 from Routes.FormRoute import getFormbyPeople, insertAnswersPeople, findSection, updateSection, censusNight, showStatistics, confirmForm, familyIdentifiers
@@ -71,6 +71,8 @@ api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')
 api.add_resource(showCodes, '/collector/show_codes', '/collector/show_codes')
 
+api.add_resource(deliverCode, '/collector/deliver_code', '/collector/deliver_code')
+
 # Formulario
 # simular Noche del censo
 api.add_resource(censusNight, '/form/censusNight', '/form/censusNight')
@@ -92,7 +94,7 @@ api.add_resource(showStatistics, '/general/show_statistics',
 api.add_resource(findSection, '/form/findSection/', '/form/findSection/')
 api.add_resource(updateSection, '/form/updateSection', '/form/updateSection')
 
-api.add_resource(confirmForm, 'form/confirm', 'form/confirm')
+api.add_resource(confirmForm, '/form/confirm', '/form/confirm')
 
 api.add_resource(TestDeployIntegrate, '/integration', '/integration')
 

@@ -74,3 +74,15 @@ class showCodes(Resource):
             CollectorCodesCollection, collectorId['id'])
         if status == 202:
             return data
+
+class deliverCode(Resource):
+    def put(self):
+        data = request.json
+        ECN = data['ECN']
+        CFN = data['CFN']
+        collectorId = data['collectorId']
+        message, success = CollectorController.deliverCode(CollectorCodesCollection, ECN, CFN, collectorId)
+        return {
+            'message': message,
+            'success': success
+        }
