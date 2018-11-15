@@ -28,7 +28,7 @@ class analistLogin(Resource):
 
 
 class analistTokenRefresh(Resource):
-    @jwt_refresh_token_required
+    # @jwt_refresh_token_required
     def post(self):
         current_user = get_jwt_identity()
         print(current_user)

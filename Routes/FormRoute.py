@@ -61,7 +61,7 @@ class censusNight(Resource):
 
 
 class getFormbyPeople(Resource):
-    @jwt_required
+    # @jwt_required
     def post(self):
         data = parserAnswerMembers.parse_args()
         Form = FormController.getFormByPeople(AnswerMembersCollection, data)
@@ -74,7 +74,7 @@ class getFormbyPeople(Resource):
 
 
 class insertAnswersPeople(Resource):
-    @jwt_required
+    # @jwt_required
     def post(self):
         form = request.json
         CFN = form['CFN']
@@ -89,7 +89,7 @@ class insertAnswersPeople(Resource):
 
 
 class findSection(Resource):
-    @jwt_required
+    # @jwt_required
     def get(self):
         CFN = request.args['CFN']
         ECN = request.args['ECN']
@@ -102,7 +102,7 @@ class findSection(Resource):
 
 
 class updateSection(Resource):
-    @jwt_required
+    # @jwt_required
     def put(self):
         data = request.json
         CFN = request.args['CFN']
@@ -115,19 +115,23 @@ class updateSection(Resource):
             'success': success
         }
 
+
 class showStatistics(Resource):
-    @jwt_required
+    # @jwt_required
     def get(self):
         data = FormController.getStatistics(
             formAnswerCollection, db.collector_codes)
         return data
+
+
 class confirmForm(Resource):
-    @jwt_required
+    # @jwt_required
     def post(self):
         data = request.json
         ECN = data['ECN']
         CFN = data['CFN']
-        message, success = FormController.confirmForm(formAnswerCollection, ECN, CFN)
+        message, success = FormController.confirmForm(
+            formAnswerCollection, ECN, CFN)
         return {
             'message': message,
             'success': success

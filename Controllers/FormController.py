@@ -85,7 +85,7 @@ def updateSection(formAnswersSection, CFN, ECN, number, form):
         '$set': form
     }, return_document=ReturnDocument.AFTER,
         projection={'_id': False},
-    upsert=True)
+        upsert=True)
     message = ''
     success = False
     if response:
@@ -120,21 +120,23 @@ def getStatistics(formAnswersSection, code_collectors):
         'delivered_forms': entregados,
         'no_delivered_forms': noentregados
     }
+
+
 def confirmForm(formAnswersSection, ECN, CFN):
     response = formAnswersSection.find_one_and_update({
         'ECN': ECN,
         'CFN': CFN
-    },{
+    }, {
         '$set': '{Confirmado: true}'
-    },return_document=ReturnDocument.AFTER,
+    }, return_document=ReturnDocument.AFTER,
         projection={'_id': False}
     )
     message = ""
     success = False
     if response:
         success = True
-        message= "Formulario confirmado con éxito"
+        message = "Formulario confirmado con éxito"
     else:
         success = False
-        message="No se ha podido confirmar el formulario"
+        message = "No se ha podido confirmar el formulario"
     return message, success

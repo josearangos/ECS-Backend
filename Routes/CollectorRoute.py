@@ -39,7 +39,7 @@ class collectorLogin(Resource):
 
 
 class collectorTokenRefresh(Resource):
-    @jwt_refresh_token_required
+    #@jwt_refresh_token_required
     def post(self):
         current_user = get_jwt_identity()
         print(current_user)
@@ -48,7 +48,7 @@ class collectorTokenRefresh(Resource):
 
 
 class registreCollector(Resource):
-    @jwt_required  # esta notacion indica que necesita obligatoriamente un token
+    #@jwt_required  # esta notacion indica que necesita obligatoriamente un token
     def post(self):
         data = request.json
         id = data['id']
@@ -58,7 +58,7 @@ class registreCollector(Resource):
 
 
 class findCollector(Resource):
-    @jwt_required
+    #@jwt_required
     def get(self):
         id = request.args
         data, status = CollectorController.find(
