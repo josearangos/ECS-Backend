@@ -91,7 +91,7 @@ api.add_resource(showStatistics, '/general/show_statistics',
 api.add_resource(findSection, '/form/findSection/', '/form/findSection/')
 api.add_resource(updateSection, '/form/updateSection', '/form/updateSection')
 
-api.add_resource(confirmForm, 'form/confirm', 'form/confirm')
+api.add_resource(confirmForm, '/form/confirm', '/form/confirm')
 
 api.add_resource(TestDeployIntegrate, '/integration', '/integration')
 

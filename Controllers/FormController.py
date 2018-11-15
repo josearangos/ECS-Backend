@@ -127,7 +127,9 @@ def confirmForm(formAnswersSection, ECN, CFN):
         'ECN': ECN,
         'CFN': CFN
     }, {
-        '$set': '{Confirmado: true}'
+        '$set': {
+            'Confirmado': True
+        }
     }, return_document=ReturnDocument.AFTER,
         projection={'_id': False}
     )
