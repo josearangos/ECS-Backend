@@ -41,7 +41,7 @@ class userLogin(Resource):
 
 
 class SecretResource(Resource):
-    #@jwt_required  # esta notacion indica que necesita obligatoriamente un token
+    # @jwt_required  # esta notacion indica que necesita obligatoriamente un token
     def get(self):
         return {
             'answer': 42
@@ -49,7 +49,7 @@ class SecretResource(Resource):
 
 
 class TokenRefresh(Resource):
-    #@jwt_refresh_token_required
+    # @jwt_refresh_token_required
     def post(self):
         current_user = get_jwt_identity()
         print(current_user)
@@ -59,9 +59,18 @@ class TokenRefresh(Resource):
 
 class TestDeployIntegrate(Resource):
     def get(self):
+
         return{
             'Saludar': 'Integración continua  es la verga'
         }
+
+
+class currentEntity(Resource):
+    @jwt_required
+    def post(self):
+        access_token = request.json['access_token']
+        print(get_jwt_identity())
+        return UserController.currentEntity(access_token)
 
 
 """

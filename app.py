@@ -37,7 +37,7 @@ for ex in default_exceptions:
 
 # importamos todas las rutas de nuestra API
 # Usuario
-from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh, TestDeployIntegrate
+from Routes.UserRoute import userLogin, insertCode, SecretResource, TokenRefresh, TestDeployIntegrate, currentEntity
 # Analista
 from Routes.AnalistRoute import analistLogin, analistTokenRefresh, findAnalist, insertAnalist
 # Collector
@@ -52,6 +52,7 @@ api.add_resource(userLogin, '/user/login', '/user/login')
 api.add_resource(insertCode, '/code/insert', '/code/insert')
 api.add_resource(SecretResource, '/secret', '/secret')
 api.add_resource(TokenRefresh, '/user/tokenRefresh', '/user/tokenRefresh')
+api.add_resource(currentEntity, '/current/entity', '/current/entity')
 
 # Analista
 api.add_resource(analistLogin, '/analist/login', '/analist/login')
