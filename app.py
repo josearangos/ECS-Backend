@@ -8,9 +8,11 @@ from werkzeug.exceptions import HTTPException
 from werkzeug.exceptions import default_exceptions
 import config
 import pymongo
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 # Adding JWT
@@ -71,7 +73,8 @@ api.add_resource(collectorTokenRefresh,
                  '/collector/tokenRefresh', '/analist/tokenRefresh')
 api.add_resource(showCodes, '/collector/show_codes', '/collector/show_codes')
 
-api.add_resource(deliverCode, '/collector/deliver_code', '/collector/deliver_code')
+api.add_resource(deliverCode, '/collector/deliver_code',
+                 '/collector/deliver_code')
 
 # Formulario
 # simular Noche del censo
