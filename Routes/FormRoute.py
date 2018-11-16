@@ -114,6 +114,7 @@ class updateSection(Resource):
             'message': message,
             'success': success
         }
+        
 
 
 class showStatistics(Resource):

@@ -80,10 +80,11 @@ def findSection(formAnswersCollection, ECN, CFN, number):
 
 
 def updateSection(formAnswersSection, CFN, ECN, number, form):
+    message = ''
+    success = False
     response = formAnswersSection.find_one_and_update({
         'ECN': ECN,
-        'CFN': CFN,
-        'seccion.number': number
+        'CFN': CFN
     }, {
         '$set': {
             'seccion.' + str(int(number) - 1): form['seccion'][0]
@@ -91,14 +92,14 @@ def updateSection(formAnswersSection, CFN, ECN, number, form):
     }, return_document=ReturnDocument.AFTER,
         projection={'_id': False},
         upsert=True)
-    message = ''
-    success = False
+
     if response:
         message = 'Actualización hecha con éxito'
         success = True
     else:
         message = 'No se pudo actualizar el formulario'
         success = False
+
     return message, success
 
 
