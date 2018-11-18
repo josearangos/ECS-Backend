@@ -63,6 +63,7 @@ class censusNight(Resource):
 class getFormbyPeople(Resource):
     # @jwt_required
     def post(self):
+        print("Llege a people")
         data = parserAnswerMembers.parse_args()
         Form = FormController.getFormByPeople(AnswerMembersCollection, data)
         return {
@@ -114,7 +115,6 @@ class updateSection(Resource):
             'message': message,
             'success': success
         }
-        
 
 
 class showStatistics(Resource):

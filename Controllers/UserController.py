@@ -24,6 +24,7 @@ def login(codeCollection, data) -> tuple:
 
 
 def currentEntity(access_token):
+    print("current")
     current_entity = get_jwt_identity()
     print(current_entity)
     isUser = current_entity.find('*')
