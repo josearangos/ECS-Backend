@@ -10,6 +10,8 @@ RUN cp -R /ECS-Backend/* /opt/app
 # Define working directory.
 WORKDIR /opt/app
 
+EXPOSE 5000
+
 # Define default command.
 ENTRYPOINT ["python"]
 CMD ["app.py"]
