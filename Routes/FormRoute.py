@@ -118,7 +118,7 @@ class updateSection(Resource):
 
 
 class showStatistics(Resource):
-    @jwt_required
+    # @jwt_required
     def get(self):
         data = FormController.getStatistics(
             formAnswerCollection, db.collector_codes)
