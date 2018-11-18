@@ -1,0 +1,3 @@
+# Ignore ide properties
+*/__pycache__
+*/.idea
