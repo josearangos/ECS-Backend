@@ -82,7 +82,7 @@ class insertAnswersPeople(Resource):
         ECN = form['ECN']
         idNumber = form['idNumber']
         messages, success = FormController.insertAnswersPeople(
-            AnswerMembersCollection, ECN, CFN, idNumber, form)
+            AnswerMembersCollection, ECN, CFN, idNumber, form['questions'])
         return {
             "messages": messages,
             "success": success
