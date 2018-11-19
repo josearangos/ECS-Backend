@@ -19,7 +19,6 @@ def censusNight(formAnswerCollection, AnswerMembersCollection, formAnswerCollect
             {'ECN': ECN, 'CFN': CFN}, {'_id': False})
         array = list(answer)
         print(array)
-
         if len(array) > 0:
             AnswerMembersCollection_CN.insert(array)
     return messages, success
