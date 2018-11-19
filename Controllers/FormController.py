@@ -49,7 +49,7 @@ def insertAnswersPeople(AnswerMembersCollection, ECN, CFN, form) -> tuple:
             'CFN': CFN
         }, {
 
-            '$set': {'questions': form}
+            '$set': {'questions': form['questions']}
         },
             projection={'_id': False},
             upsert=True,
