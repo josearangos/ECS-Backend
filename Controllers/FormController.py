@@ -87,7 +87,7 @@ def updateSection(formAnswersSection, CFN, ECN, number, form):
         'CFN': CFN
     }, {
         '$set': {
-            'seccion.' + str(int(number) - 1): form['seccion'][0]
+            'seccion.' + str(int(number) - 1) + '.respuestas': form
         }
     }, return_document=ReturnDocument.AFTER,
         projection={'_id': False},
