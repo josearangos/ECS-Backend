@@ -29,10 +29,9 @@ def getFormByPeople(AnswerMembersCollection, data):
     Form = "null"
     try:
         Form = AnswerMembersCollection.find_one({
-            'ECN': data.ECN,
-            'CFN': data.CFN,
-            'idNumber': data.idNumber
-        }, {'_id': False})
+            'ECN': data['ECN'],
+            'CFN': data['CFN']
+        }, {'_id': False, 'ECN': False, 'CFN': False})
     except Exception as e:
         print(e)
     return Form
@@ -41,17 +40,16 @@ def getFormByPeople(AnswerMembersCollection, data):
 # Validar que traiga todo los campos de las preguntas
 
 
-def insertAnswersPeople(AnswerMembersCollection, ECN, CFN, idNumber, form) -> tuple:
+def insertAnswersPeople(AnswerMembersCollection, ECN, CFN, form) -> tuple:
     messages = ""
     success = False
-    print(ECN)
     try:
         response = AnswerMembersCollection.find_one_and_update({
             'ECN': ECN,
-            'CFN': CFN,
-            'idNumber': idNumber
+            'CFN': CFN
         }, {
-            '$set': {'form.respuestas': form}
+
+            '$set': {'questions': form}
         },
             projection={'_id': False},
             upsert=True,

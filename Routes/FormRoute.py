@@ -60,7 +60,7 @@ class censusNight(Resource):
         }
 
 
-class getFormbyPeople(Resource):
+"""class getFormbyPeople(Resource):
     # @jwt_required
     def post(self):
         print("Llege a people")
@@ -69,6 +69,16 @@ class getFormbyPeople(Resource):
         return {
             "form": Form
         }
+"""
+
+
+class getFormbyPeople(Resource):
+    # @jwt_required
+    def post(self):
+        data = request.json
+        Form = FormController.getFormByPeople(AnswerMembersCollection, data)
+        return {
+            "form": Form}
 
 
 # Este solo debe ser llamado la primera vez luego utilizar update
@@ -80,9 +90,9 @@ class insertAnswersPeople(Resource):
         form = request.json
         CFN = form['CFN']
         ECN = form['ECN']
-        idNumber = form['idNumber']
+        print(form)
         messages, success = FormController.insertAnswersPeople(
-            AnswerMembersCollection, ECN, CFN, idNumber, form['questions'])
+            AnswerMembersCollection, ECN, CFN, form)
         return {
             "messages": messages,
             "success": success
