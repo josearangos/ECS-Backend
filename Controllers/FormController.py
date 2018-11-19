@@ -51,7 +51,7 @@ def insertAnswersPeople(AnswerMembersCollection, ECN, CFN, idNumber, form) -> tu
             'CFN': CFN,
             'idNumber': idNumber
         }, {
-            '$set': form
+            '$set': {'respuestas': form}
         },
             projection={'_id': False},
             upsert=True,
